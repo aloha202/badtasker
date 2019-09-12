@@ -18,15 +18,6 @@ all:
       Users:
         url: 'user/index'
         icon: user
-      Projects:
-        icon: barcode
-        items:
-          Websites:
-            icon: picture-o
-            url:          website
-          Projects:
-            icon: file-text
-            url:          website_project
 
 
     menu2:
