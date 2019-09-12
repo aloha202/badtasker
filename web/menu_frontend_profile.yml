@@ -1,0 +1,1 @@
+<?php return array(  0 =>   array(    0 => 'Мой профиль',    1 => 'index',    2 =>     array(    ),  ),  1 =>   array(    0 => 'Фотография',    1 => 'avatar',    2 =>     array(    ),  ),  2 =>   array(    0 => 'Изменить пароль',    1 => 'password',    2 =>     array(    ),  ),)

@@ -1,0 +1,50 @@
+all:
+  csv_delimiter: ;
+  email:
+    noreply: 'Куча кода <noreply@dev.web375.org>'
+    template_footer: ""
+  form:
+    attribute_required: false
+    siteurl: http://dev
+  live_server: ' '
+  default_image:
+    callback: util/imageBuilderWidget
+    image_folder: default_image
+    image_ext: jpg
+    image_field: image
+    pdf_folder: pdf
+    pdf_field: pdf
+    thumbs:
+      small_news:
+        width: 157
+        height: 163
+        method: crop
+        ext: .small
+      small:
+        width: 157
+        height: 163
+        method: crop
+        ext: .small
+      tiny:
+        width: 40
+        height: 40
+        method: crop
+        ext: .tiny
+  profile:
+    callback: util/imageBuilderWidget
+    image_folder: profile
+    image_ext: jpg
+    image_field: image
+    pdf_folder: pdf
+    pdf_field: pdf
+    thumbs:
+      small:
+        width: 160
+        height: 160
+        method: crop
+        ext: .small
+      tiny:
+        width: 80
+        height: 80
+        method: crop
+        ext: .tiny

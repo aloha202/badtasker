@@ -1,0 +1,42 @@
+## YAML Template.
+wizard:
+  model: Human
+  steps:
+    general:
+      fields:
+        - first_name
+        - last_name
+        - image
+        - dob
+        - sex
+        - country
+        - city
+        - marital_status
+        - driver_license
+    contact:
+      field_prefix: contact
+      fields:
+        - country
+        - city
+        - address
+        - phone
+        - phone2
+        - email
+        - skype
+        - website
+    work:
+      field_prefix: work
+      fields:
+        - company_name
+        - company_phone
+        - company_email
+        - position
+        - application_date
+        - description
+    about:
+      fields:
+        - politics
+        - religion
+        - other
+        
+        

@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 28, 2016, 11:30:40 AM
+    Author     : aradyuk
+*/
+
+
+
+.modal-backdrop{
+    
+}
+
+.sf_admin_modal{
+    
+}
+
+
+.sf_admin_actions{
+    padding: 15px 10px 10px;
+    margin-top: 20px;
+    border-top: solid 1px #DDDDDD;
+}
+.sf_admin_form .sf_admin_actions{
+    padding-left: 0;
+}
+
+
+.sf_admin_pagination{
+    padding-top: 15px;
+}
+.sf_admin_pagination a{ }
+.sf_admin_pagination span{ }
+.sf_admin_pagination a,
+.sf_admin_pagination span{
+}
+
+.focus .iCheck-helper{
+    border-color: blue;
+}
+
+/* FORM ERRORS */
+
+.form-error ul,
+.form-error li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #B84471;
+}
+
+.sf_admin_form_row.errors{}
+.sf_admin_form_row.errors .form-control{
+    border-color: #B84471;
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.sf_admin_form_row.errors .form-control:focus{
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(184, 68, 113, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(184, 68, 113, .6);    
+}
+
+.sf_admin_form fieldset h2{
+    display: none;
+}
+
+.sf_admin_form_tabs{
+    margin-bottom: 20px;
+}
+.sf_admin_form_tabs ul{}
+.sf_admin_form_tabs ul li{}
+
+
+.sf_admin_filter .form_padding{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sf_admin_form_field_answers table{
+    width: 100%;
+    margin-top: 15px;
+}
+.sf_admin_form_field_answers table:first-child{
+    border-top: none;
+}
+.sf_admin_form_field_answers table th{
+    width: 150px;
+}
+.sf_admin_form_field_answers table td{
+
+}
+.sf_admin_form_field_answers input[type=text]{
+    padding: 5px 10px;
+    width: 90%;
+}

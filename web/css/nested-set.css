@@ -1,0 +1,13 @@
+.nested_set span {
+  background-position: center left;
+  background-repeat: no-repeat;
+  padding: .2em 0 .2em 1.5em;
+}
+ 
+.nested_set span.leaf {
+  background-image: url('/images/icons/tree-leaf.png');
+}
+ 
+.nested_set span.node {
+  background-image: url('/images/icons/tree-node.png');
+}

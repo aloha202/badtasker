@@ -1,0 +1,47 @@
+generator:
+  class: myDoctrineGenerator
+  param:
+##CONFIG##
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    ~
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~
+      
+#    extra:
+#      new:
+#        fromfilters: [quizz_id, name]  
+#      export:
+#        filename: '%date% - My export'
+#        mode: 'csv'      #[csv, xlsx]
+#        dateformat: 'Y.m.d'
+#        encoding: 'windows-1251'
+#      javascript:
+#        ajax_form_validation: #22.10.2014
+#          fields: [name, email, directory]
+#        remoteoptions:
+#          purchase:
+#            trigger: purchase_id
+#            url: util/purchasePriceByPurchase
+#            update: purchase_price_id
+#        remotedata:
+#          customer:
+#            trigger: customer_id
+#            url: util/remoteCustomerData
+#            fields: [customer_name, customer_address]  
+#        showhide_form_fields:
+#          selloff:
+#            toggler: selloff_enabled
+#            fields: [selloff_price, selloff_end_date]
+#           #reverse: true
+#        showhide_selects:
+#          type:
+#            toggler: type
+#            values:
+#              default: []
+#              articles: [articles]
+#              category: [category_discount, categories_list]

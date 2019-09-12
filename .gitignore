@@ -1,0 +1,10 @@
+/cache
+/log
+/.idea
+/.idea_modules
+/vendor
+/Archive.zip
+/tablelite.sql
+/config/databases.yml
+/config/symfony.php
+/web/uploads

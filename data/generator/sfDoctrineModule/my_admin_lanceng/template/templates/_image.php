@@ -1,0 +1,1 @@
+<img src='[?php echo $<?php echo $this->getSingularName(); ?>->getImageThumbnail('small') ?]' />

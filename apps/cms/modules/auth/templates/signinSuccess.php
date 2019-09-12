@@ -1,0 +1,1 @@
+<?php include_partial('auth/signin_form', array('form' => $form)); ?>

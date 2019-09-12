@@ -1,0 +1,12 @@
+root_lang: ru
+google_translate_lang: en
+objects:
+  Page: 
+    fields: [name, content, meta_title, meta_description, meta_keywords]
+  TextBlock: 
+    fields: [text]
+  EmailTemplate: 
+    fields: [subject, message]
+  MenuItem: 
+    fields: [name]
+

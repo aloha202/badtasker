@@ -1,0 +1,56 @@
+generator:
+  class: myDoctrineGenerator
+  param:
+    model_class:           TextBlock
+    theme:                 my_admin_lanceng
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          text_block
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        table_method: tmListNormal
+        actions: {}
+        batch_actions: {}
+        object_actions:
+          _edit: ~
+        display: [name, text]          
+      filter:
+        class: false
+      form:
+        class: TextBlockFormAdmin
+        actions:
+          _list: ~
+          _save: ~
+      edit:    ~
+      new:     ~
+      
+#    extra:
+#      export:
+#        filename: '%date% - My export'
+#        mode: 'csv'      #[csv, xlsx]
+#        dateformat: 'Y.m.d'
+#        encoding: 'windows-1251'
+#      javascript:
+#        ajax_form_validation: #22.10.2014
+#          fields: [name, email, directory]
+#        remoteoptions:
+#          purchase:
+#            trigger: purchase_id
+#            url: util/purchasePriceByPurchase
+#            update: purchase_price_id
+#        remotedata:
+#          customer:
+#            trigger: customer_id
+#            url: util/remoteCustomerData
+#            fields: [customer_name, customer_address]  
+#        showhide_form_fields:
+#          selloff:
+#            toggler: selloff_enabled
+#            fields: [selloff_price, selloff_end_date]

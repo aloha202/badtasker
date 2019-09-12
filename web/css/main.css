@@ -1,0 +1,115 @@
+.relpos{
+    position: relative;
+}
+.admin_container #menu_create_page{
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+.admin_container #menu_create_page input{
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.two_columns{
+    padding: 10px 20px;
+}
+.left_col{
+	width: 200px;
+	float: left;
+}
+
+.right_col{
+	margin-left: 220px;
+}
+
+.ic_block{
+    position: relative;
+    margin: 10px 0;
+}
+
+.ic_block .val{
+    position: absolute;
+    left: 60px;
+    top: 0;
+    font-size: 28px;
+}
+
+.ic_block .help{
+    position: absolute;
+    left: 60px;
+    top: 30px;
+    font-size: 11px;
+}
+
+
+#sf_admin_menu{
+    position: relative;
+    z-index: 100;
+}
+#sf_admin_menu .item{
+    white-space: nowrap;
+}
+
+input.hasDatepicker{
+    background: #fff url(../images/calendar_icon.png) 99% 50% no-repeat;
+}
+
+.sf_admin_form_row.validationOk input{
+    background: url(/sfDoctrinePlugin/images/tick.png) 99% 50% no-repeat;    
+}
+.sf_admin_form_row.errors input{
+    background: url(/sfAdminDashPlugin/images/error.png) 99% 50% no-repeat;    
+}
+.sf_admin_form_row.loading input{
+    background: url(../images/system/ajax-loader.gif) 99% 50% no-repeat;
+}
+
+#sf_admin_menu ul.developer li a{
+    color: blue;
+}
+#sf_admin_menu ul.developer li a:hover{
+    color: darkblue;
+}
+#sf_admin_menu ul.developer li a.danger{
+    color: red;
+}
+#sf_admin_menu ul.developer li a:hover.danger
+{
+    color: red;
+}
+#sf_admin_menu ul.developer li a.green{
+    color: green;
+}
+#sf_admin_menu ul.developer li a:hover.green
+{
+    color: green;
+}
+
+#localization_list .textarea_field{
+    width: 50%;
+}
+#localization_list textarea{
+    width: 100%;
+}
+
+#sf_admin_container p.help{
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+
+#sf_admin_menu .node .new_messages{
+    background: lightgreen;
+    color: darkgreen;
+}
+
+#sf_admin_container .sf_admin_row.closed td{
+	color: #ccc;
+}
+#sf_admin_container .sf_admin_row.closed td a{
+	color: #ccc;	
+}

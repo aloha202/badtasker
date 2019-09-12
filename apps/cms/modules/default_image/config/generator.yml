@@ -1,0 +1,31 @@
+generator:
+  class: myDoctrineGenerator
+  param:
+    model_class:           DefaultImage
+    theme:                 my_admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          default_image
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Images
+        display: [title, _image]
+        actions: {}
+        batch_actions: {}
+        object_actions:
+          _edit: ~
+      filter:
+        class: false
+      form:
+        actions:
+          _list: ~
+          _save: ~
+      edit:    ~
+      new:     ~

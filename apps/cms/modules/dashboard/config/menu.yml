@@ -1,0 +1,11 @@
+main: 
+  - [Dashboard, 'dashboard/index', dashboard]
+  - [Menu, 'menu_root/index', [menu, menu_root], menu]
+  - [Pages, 'page/index', page, page]
+  - [News, 'news/index', news, news]
+#  - [Category, 'category/index', category, category]
+  - [Dictionary, 'dictionary/index', dictionary, dictionary]
+  
+top:
+  - [Users, 'user/index', user, user]
+  - [Logout, 'auth/signout']

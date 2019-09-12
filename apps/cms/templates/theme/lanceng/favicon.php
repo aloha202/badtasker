@@ -1,0 +1,1 @@
+<link rel="shortcut icon" href="/lanceng/assets/img/favicon.ico">

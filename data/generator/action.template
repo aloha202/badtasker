@@ -1,0 +1,7 @@
+public function execute<?php echo $action; ?>(sfWebRequest $request)
+    {
+        <?php if($page_name): ?>
+        $this->processPage('<?php echo $page_name; ?>');
+        <?php endif; ?>
+        /* --- <?php echo $action; ?> ADDCODE --- */
+    }

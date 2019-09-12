@@ -1,0 +1,85 @@
+.system_dev_window{
+    position: fixed;
+    width: 200px;
+    height: 400px;
+    background: #fff;
+    left: 0;
+    top: 0;
+
+    /*
+    -moz-box-shadow:rgba(0,0,0,0.4) 0 0 14px;
+    -webkit-box-shadow:rgba(0,0,0,0.4) 0 0 14px;
+    -o-box-shadow:rgba(0,0,0,0.4) 0 0 14px;
+    box-shadow:rgba(0,0,0,0.4) 0 0 14px;
+    */
+    font: 11px 'Courier New';
+    color: #000;
+    z-index: 10001;
+}
+
+.system_dev_window .system_dev_handle{
+    position: absolute;
+    right: -15px;
+    top: 50px;
+    width: 15px;
+    height: 300px;
+    background: #ddd url(../images/system/dev_bar.png) 50% 50% no-repeat;
+    cursor: pointer;
+    cursor: hand;
+    
+    -moz-border-top-right-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -o-border-top-right-radius:5px;
+    -ms-border-top-right-radius:5px;
+    -khtml-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    
+    -moz-border-bottom-right-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    -o-border-bottom-right-radius:5px;
+    -ms-border-bottom-right-radius:5px;
+    -khtml-border-bottom-right-radius:5px;
+    border-bottom-right-radius:5px;    
+}
+
+.system_dev_content{
+    padding: 10px;
+    
+}
+.system_dev_tabs{
+    height: 20px;
+}
+.system_dev_tab{
+    float: left;
+    padding: 3px;
+    cursor: pointer;
+    cursor: hand;
+}
+.system_dev_tab_active{
+    background: #eee;
+}
+.system_dev_tabcontent{
+    display: none;
+    height: 360px;
+    overflow: auto;    
+}
+
+.system_dev_content ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.system_dev_content ul li{
+    list-style: none;
+    border-top: solid 1px #eee;
+}
+.system_dev_content ul li:first-child{
+    border-top: none;
+}
+.system_dev_content ul li a{
+    display: block;
+    padding: 3px;
+}
+.system_dev_content ul li.system_dev_current{
+    background: #edffed;
+}

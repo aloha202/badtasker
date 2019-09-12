@@ -1,0 +1,15 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/12-Filters
+
+rendering: ~
+cms:
+  class: CmsFilter
+security:
+  class: MySecurityFilter
+  param:
+    type: security
+
+cache:     ~
+cms2:
+  class: CmsFilter2
+execution: ~

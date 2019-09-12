@@ -1,0 +1,55 @@
+generator:
+  class: myDoctrineGenerator
+  param:
+    model_class:           sfGuardUser
+    theme:                 my_admin_lanceng
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_user
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      fields:
+        password_again: { label: "Password (again)" }
+
+      list:
+        title:   User list
+        display: [first_name, =username, created_at, ;is_active, last_login ]
+        table_method: tmListSuper
+        object_actions:
+          login: {label: '<i class="fa fa-key"></i>', action: loginAs, params: {class: 'btn btn-default', title: 'Login as'}}
+          _edit: ~
+          _delete: ~
+
+      form:
+        class: sfGuardUserAdminForm
+        display:
+          "User": 
+            display: [first_name, last_name, email_address, lang, username, password, password_again]
+            icon: user
+          "Permissions": 
+            display: [is_active, is_super_admin]
+            icon: lock
+          "Lang":
+            display: [lang]
+            icon: coffee
+
+      filter:
+        display: [username]
+      edit:
+        title: Editing User "%%username%%"
+
+      new:
+        title: New User
+      
+    extra:
+      javascript:
+        ajax_form_validation:
+          fields: [email_address]
+#        showhide_form_fields:
+#          selloff:
+#            toggler: selloff_enabled
+#            fields: [selloff_price, selloff_end_date]

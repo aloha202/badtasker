@@ -1,0 +1,229 @@
+.system_popup_block{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    
+    display: none; 
+}
+.system_popup_block_table{
+    width: 100%;
+    height: 100%;
+}
+.system_popup_block_td{
+    height: 100%;
+    vertical-align: middle;
+}
+
+.system_popup_overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    z-index: 1000;
+}
+
+.system_popup_close{
+    
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: url(../images/system/system_popup_close.png) 50% 50% no-repeat;
+    cursor: pointer;
+    cursor: hand;
+    
+}
+
+.system_popup_window{
+    
+    z-index: 1001;
+    
+    
+    width:550px;
+    position:absolute;
+    left:50%; 
+    margin:0 0 0 -325px;
+    background:#fff;
+    
+    -moz-box-shadow:rgba(0,0,0,0.4) 0 0 14px;
+    -webkit-box-shadow:rgba(0,0,0,0.4) 0 0 14px;
+    -o-box-shadow:rgba(0,0,0,0.4) 0 0 14px;
+    box-shadow:rgba(0,0,0,0.4) 0 0 14px;
+    -moz-border-radius:20px;-webkit-border-radius:20px;
+    -o-border-radius:20px;
+    -ms-border-radius:20px;
+    -khtml-border-radius:20px;
+    border-radius:20px
+    
+    
+}
+.system_popup_content{
+    min-height: 100px;
+    padding: 25px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.system_loading{
+    text-align: center;
+}
+
+
+.system_message_block{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    display: none;
+}
+.system_message{
+    padding: 5px;
+    background: #0D82CF;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.system_message_error{
+    border-color: red;
+}
+
+.system_form input[type='text'],
+.system_form input[type='password'],
+.system_form textarea{
+    font-size: 14px;
+    padding: 5px 9px;
+}
+.system_form select{}
+.system_form input[type='checkbox']{
+    
+}
+.system_form button,
+.system_form input[type='button'],
+.system_form input[type='submit']{
+    
+}
+
+.system_form_formatter_table form table{
+    width: 100%;
+    border: none !important;    
+}
+.system_form_formatter_table form table th,
+.system_form_formatter_table form table td{
+    padding: 3px 5px;
+    border: none !important;
+}
+.system_form_formatter_table form table th{
+    text-align: right;
+    vertical-align: top;
+}
+.system_form_formatter_table form table th label{
+    font-weight: normal;
+    position: relative;
+    top: 3px;
+}
+.system_form_formatter_table form table td{
+    
+}
+.system_form_formatter_table form table .even td,
+.system_form_formatter_table form table .even th{
+    background: #f7f7f7;
+}
+
+.system_form_formatter_table input[type='text'],
+.system_form_formatter_table input[type='password'],
+.system_form_formatter_table textarea{
+    width: 80%;
+}
+.system_form_formatter_table.no_labels th{
+    display: none;
+}
+
+.system_popup_block .error_list,
+.system_popup_block .error_list li{
+    color: red;
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+.system_popup_block .error_list li{
+    margin: 5px 0;
+}
+
+.system_twocolumn{}
+.system_twocolumn .system_column{
+    width: 50%;
+    float: left;
+}
+
+.table_view table{
+    width: 100%;
+}
+.table_view table th{
+    text-align: right;
+}
+.table_view table .align_left th{
+    text-align: left;
+}
+.table_view table,
+.table_view table tr,
+.table_view table td,
+.table_view table th{
+    border: none;
+}
+table.system_zebra tr.system_even td,
+table.system_zebra tr.system_even th,
+.table_view table tr.system_even td,
+.table_view table tr.system_even th{
+    background: #f7f7f7;
+}
+
+.clr{
+    clear: both;
+}
+
+
+
+
+.sf_admin_container ul.sf_admin_actions li
+{
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+.sf_admin_container ul.sf_admin_actions li a,
+.sf_admin_container ul.sf_admin_td_actions li a
+{
+  padding-left: 20px;
+  background: url(/sfDoctrinePlugin/images/default.png) no-repeat 0 0;
+}
+
+.sf_admin_container ul li.sf_admin_action_new a
+{
+  background: url(/sfDoctrinePlugin/images/new.png) no-repeat 0 0;
+}
+
+.sf_admin_container ul li.sf_admin_action_delete a
+{
+  background: url(/sfDoctrinePlugin/images/delete.png) no-repeat 0 0;
+}
+
+.sf_admin_container ul li.sf_admin_action_list a
+{
+  background: url(/sfDoctrinePlugin/images/list.png) no-repeat 0 0;
+}
+
+.sf_admin_container ul li.sf_admin_action_edit a
+{
+  background: url(/sfDoctrinePlugin/images/edit.png) no-repeat 0 0;
+}

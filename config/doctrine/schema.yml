@@ -1,0 +1,85 @@
+Website:
+  connection: doctrine
+  columns:
+    namespace: string(255)
+    host: string(255)
+    is_secure: {type: boolean, default: true}
+
+WebsiteProject:
+  actAs: [Timestampable]
+  columns:
+    website_id: {type: integer}
+    name: string(255)
+    codebase_type: {type: enum, values: [file, input], default: input}
+    codebase_file: string(255)
+    codebase_input: string()
+    has_window: {type: boolean, default: true}
+    is_free: {type: boolean, default: false}
+  relations:
+    Website: {foreignAlias: Projects, onDelete: CASCADE}
+    Users: {class: sfGuardUser, refClass: WebsiteProject2sfGuardUser, foreignAlias: Projects}
+
+UserSettings:
+  columns:
+    user_id: {type: integer, notnull: true}
+    show_on_all_websites: {type: boolean, default: true}
+  relations:
+    User: {local: user_id, class: sfGuardUser, type: one, foreignType: one, onDelete: CASCADE}
+
+WebappConfig:
+  columns:
+    user_id: {type: integer, notnull: true}
+    website_project_id: {type: integer, notnull: true}
+    config: string()
+    is_active: {type: boolean, default: true}
+  relations:
+    User: {local: user_id, class: sfGuardUser, onDelete: CASCADE, foreignAlias: WebappConfigs}
+    WebsiteProject: {onDelete: CASCADE, foreignAlias: WebappConfigs}
+
+
+WebsiteProject2sfGuardUser:
+  columns:
+    website_project_id: {type: integer, primary: true, notnull: true}
+    sf_guard_user_id: {type: integer, primary: true, notnull: true}
+  relations:
+    WebsiteProject: {onDelete: CASCADE}
+    sfGuardUser: {onDelete: CASCADE}
+
+DefaultImage:
+  connection: doctrine  
+  actAs: [ImageBuilder]
+  columns:
+    name: string(255)
+    title: string(255)
+    image: {type: string(255), notnull: true} 
+
+
+
+    
+TextBlock:
+  connection: doctrine
+  actAs:
+    I18n:
+      fields: [text]
+  columns:
+    name: {type: string(255), notnull: true}
+    title: {type: string(255)}
+    text: string()
+    application: string(32)
+    module: string(32)
+    special_mark: string(32)
+    is_visible_for_admin: {type: boolean, default: false}
+  indexes:
+    section_index:
+      fields: [application, module]
+
+
+
+
+
+
+
+  
+
+
+

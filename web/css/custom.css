@@ -1,0 +1,89 @@
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  
+  
+  h2.header{
+      color: #FF9800;
+  }
+  
+  .input-captcha{
+      position: relative;
+  }
+  .input-captcha img.captcha{
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  
+  
+  .input-field.invalidate .form-error{
+      color: red;
+  }
+  .input-field.invalidate input{
+      border-color: red;
+  }
+  
+  .quizz-question{
+    padding: 15px;
+  }
+
+  .quizz-question .question label{
+	  font-size: 1.5em;
+  }
+  .quizz-result{
+      padding: 10px;
+  }
+  .quizz-result .question-name{
+      font-size: 120%;
+  }
+  .quizz-result .comment{
+      font-size: 90%;
+      padding: 5px;
+  }
+
+  .loading{
+      /*
+      background-image: url('/images/system/system_loading.gif');
+      background-position: center;
+      background-repeat: no-repeat;
+      */
+      border: solid 1px red !important;
+  }
+  .loading *{
+      /*
+      visibility: hidden !important;
+      */
+  }
+  .invalidate .form-error{
+      position: relative;
+      top: -10px;
+  }
+
+  img.user-avatar{
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      margin-top: -5px;
+      position: relative;
+      top: 10px;
+  }
+
+  img.my-icon{
+      width: 20px;
+      height: 20px;
+      margin-right: 3px;
+  }
+
+  img.my-icon-skype{
+      width: 23px;
+      height: 23px;
+      position: relative;
+      top: 2px;
+  }

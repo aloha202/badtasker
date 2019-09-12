@@ -1,0 +1,48 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:
+#    - main.css
+    - ui-lightness/jquery-ui-1.8.16.custom.css
+ #   - admin.css
+#    - jniceit.css
+    - library/imgareaselect-default.css
+    - library/imgareaselect-animated.css
+    - library/tinymce.css
+#    - /jquery/wHumanMsg.css    
+    - system.css
+    - admin.css
+
+  javascripts:
+    - https://www.google.com/jsapi    
+    - http://maps.google.com/maps/api/js?sensor=false&language=en
+#    - library/jquery-1.7.1.min.js
+#    - jquery.smooth-scroll.js
+#    - jquery.prettyforms.js
+#    - jquery.jcarousel.min.js
+#    - jquery-ui-1.8.16.custom.min.js
+#    - library/jquery.color.js
+    - jquery-compat.js
+    - jquery-plugins.js    
+    - library/jquery.imgareaselect.js
+    - library/tiny_mce/tiny_mce.js
+    - jquery.cookie.js
+#    - /jquery/wHumanMsg.js
+#    - /sfDoctrineChoiceChainPlugin/js/sfWidgetFormDoctrineChoiceChain.js
+    - sfForm.js
+    - system.js
+    - admin.js
+
+  has_layout:     true
+  layout:         layout

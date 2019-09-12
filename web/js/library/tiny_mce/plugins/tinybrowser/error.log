@@ -1,0 +1,77 @@
+2010-03-19 17:27:17 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:27:17 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:27:17 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:27:17 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:27:17 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:27:17 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:27:17 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:27:17 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:27:17 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:27:26 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:27:26 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:27:26 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:27:33 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:27:33 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:27:33 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:27:37 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No error	File: edit.php	Line: 243	
+2010-03-19 17:27:37 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: edit.php	Line: 245	
+2010-03-19 17:27:37 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: edit.php	Line: 283	
+2010-03-19 17:27:37 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No error	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:27:37 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:27:37 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:27:38 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:27:38 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:27:38 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:27:52 (EET)	8 Notice	Undefined variable: success	File: upload_file.php	Line: 35	
+2010-03-19 17:27:52 (EET)	8 Notice	Undefined variable: success	File: upload_file.php	Line: 35	
+2010-03-19 17:27:54 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No error	File: upload_process.php	Line: 21	
+2010-03-19 17:27:55 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:27:55 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:27:55 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:28:22 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:28:22 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:28:22 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:28:22 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:28:22 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:28:22 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:28:22 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: Invalid argument	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:28:22 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:28:22 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:28:24 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No error	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:28:24 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:28:24 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:28:25 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:28:25 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:28:25 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:28:25 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:28:25 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:28:25 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:28:25 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: Invalid argument	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:28:25 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:28:25 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:29:06 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No error	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:29:06 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:29:06 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:29:11 (EET)	8 Notice	Undefined variable: success	File: upload_file.php	Line: 35	
+2010-03-19 17:29:11 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No error	File: upload_process.php	Line: 21	
+2010-03-19 17:29:11 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No error	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:29:11 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:29:11 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:29:25 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No error	File: edit.php	Line: 243	
+2010-03-19 17:29:25 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: edit.php	Line: 245	
+2010-03-19 17:29:25 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: edit.php	Line: 283	
+2010-03-19 17:29:25 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No error	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:29:25 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:29:25 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:29:28 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:29:28 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:29:28 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:29:28 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:29:28 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:29:28 (EET)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2010-03-19 17:29:28 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:29:28 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:29:28 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2010-03-19 17:29:34 (EET)	2 Warning	opendir(D:/localhostD:/localhost/newssite/www/upload/media/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No error	File: fns_tinybrowser.php	Line: 363	
+2010-03-19 17:29:34 (EET)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2010-03-19 17:29:34 (EET)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	

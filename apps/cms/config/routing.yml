@@ -1,0 +1,62 @@
+website_project:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                WebsiteProject
+    module:               website_project
+    prefix_path:          /website_project
+    column:               id
+    with_wildcard_routes: true
+
+website:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Website
+    module:               website
+    prefix_path:          /website
+    column:               id
+    with_wildcard_routes: true
+
+sf_guard_user_user_user:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUser
+    module:               user_user
+    prefix_path:          /user_user
+    column:               id
+    with_wildcard_routes: true
+
+
+
+
+text_block:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                TextBlock
+    module:               text_block
+    prefix_path:          /text_block
+    column:               id
+    with_wildcard_routes: true
+
+
+
+default_image:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                DefaultImage
+    module:               default_image
+    prefix_path:          /default_image
+    column:               id
+    with_wildcard_routes: true
+
+sf_guard_user:
+  class: sfDoctrineRouteCollection
+  options: { model: sfGuardUser, module: user, prefix_path: /user, column: id, with_wildcard_routes: true }
+
+homepage:
+  url: /
+  param: { module: dashboard, action: index}
+default_index:
+  url: '/:module'
+  param: { action: index }
+default:
+  url: '/:module/:action/*'

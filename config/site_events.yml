@@ -1,0 +1,37 @@
+---
+all:
+  default:
+    footer: "<br /><br /> <a href='http://bookcrossing.of.by'>bookcrossing.of.by</a>"
+  events:
+    password_recovery:
+      name: Восстановление пароля
+      email_user:
+        template: password_recovery_user
+    registration:
+      email_admin:
+        template: registration_admin
+      email_user:
+        template: registration_user
+      name: Registration
+    user_created_by_admin:
+      email_user:
+        template: user_created_by_admin_user
+      name: User created by admin
+    contactus_message:
+      email_user:
+        template: contactus_message_user
+      email_admin:
+        template: contactus_message_admin
+      name: Contactus message
+    user_create:
+      email_user:
+        template: user_create_user
+      name: User create
+    social_bridge_user_confirm_email:
+      email_user:
+        template: social_bridge_user_confirm_email_user
+      name: Social bridge user confirm email
+    quizz_take_create:
+      name: New quizz take
+      email_admin:
+        template: quizz_take_create_admin

@@ -1,0 +1,33 @@
+/* 
+    Document   : localizationToolbar
+    Created on : 27.10.2014, 22:31:05
+    Author     : Alaxa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#DEV2localizationToolbar{
+       height: 20px;
+       padding: 10px;
+       border-bottom: solid 1px #888;
+       z-index: 1000;
+       display: block;
+       background: #f7f7f7;
+       position: relative;
+       z-index: 10000;
+}
+#DEV2localizationToolbar span{
+    font-size: 20px;
+    margin-right: 10px;
+}
+#DEV2localizationToolbar select{
+    position: relative;
+    top: -2px;
+}
+#DEV2localizationToolbar input{
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    margin-left: 10px;
+}
+

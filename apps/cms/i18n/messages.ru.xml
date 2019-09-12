@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file original="global" source-language="en" datatype="plaintext" date="2011-11-22T23:53:47Z">
+    <header/>
+    <body>    
+      <trans-unit>
+        <source>Image</source>
+        <target>Картинка</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Sort order</source>
+        <target>Порядок</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Is active</source>
+        <target>Активен</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Text</source>
+        <target>Текст</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Name</source>
+        <target>Название</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Program</source>
+        <target>Программа</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Edit Banner</source>
+        <target>Редактировать баннер</target>
+      </trans-unit>
+      <trans-unit>
+        <source>New Banner</source>
+        <target>Создать баннер</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Banner List</source>
+        <target>Список баннеров</target>
+      </trans-unit>     
+      <trans-unit>
+        <source>Edit Program ldv</source>
+        <target>Редактировать программу LDV</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Program ldv List</source>
+        <target>Программы LDV</target>
+      </trans-unit>     
+      <trans-unit>
+        <source>Filter</source>
+        <target>Фильтр</target>
+      </trans-unit>   
+      <trans-unit>
+        <source>Program List</source>
+        <target>Программы LWB</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Edit Program</source>
+        <target>Редактировать программу LWB</target>
+      </trans-unit>       
+      <trans-unit>
+        <source>Event List</source>
+        <target>Мероприятия</target>
+      </trans-unit>      
+      <trans-unit>
+        <source>Date</source>
+        <target>Дата</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Status</source>
+        <target>Статус</target>
+      </trans-unit>    
+      <trans-unit>
+        <source>Type</source>
+        <target>Тип</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit Event</source>
+        <target>Редактироват мероприятие</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Anons</source>
+        <target>Анонс</target>
+      </trans-unit>      
+      <trans-unit>
+        <source>Brief</source>
+        <target>Бриф</target>
+      </trans-unit>      
+      <trans-unit>
+        <source>Programs list</source>
+        <target>Программы</target>
+      </trans-unit>        
+      <trans-unit>
+        <source>Events list</source>
+        <target>Мероприятия</target>
+      </trans-unit>    
+      <trans-unit>
+        <source>Foto List</source>
+        <target>Фотографии</target>
+      </trans-unit>        
+      <trans-unit>
+        <source>Edit Foto</source>
+        <target>Редактировать фотографию</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Video List</source>
+        <target>Видео</target>
+      </trans-unit>        
+      <trans-unit>
+        <source>Edit Video</source>
+        <target>Редактировать видео</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Event</source>
+        <target>Мероприятие</target>
+      </trans-unit>    
+      <trans-unit>
+        <source>Response list</source>
+        <target>Отзывы</target>
+      </trans-unit>   
+      <trans-unit>
+        <source>Age</source>
+        <target>Возраст</target>
+      </trans-unit>      
+      <trans-unit>
+        <source>City</source>
+        <target>Город</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Profession</source>
+        <target>Профессия</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Edit Response</source>
+        <target>Редактировать отзыв</target>
+      </trans-unit>   
+      <trans-unit>
+        <source>Edit Cite</source>
+        <target>Редактировать цитату</target>
+      </trans-unit>   
+      <trans-unit>
+        <source>Cite List</source>
+        <target>Цитаты</target>
+      </trans-unit>   
+      <trans-unit>
+        <source>Programs</source>
+        <target>Программы</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Events</source>
+        <target>Мероприятия</target>
+      </trans-unit>      
+      <trans-unit>
+        <source>Logout</source>
+        <target>Выход</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Dictionary</source>
+        <target>Параметры</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Edit Dictionary</source>
+        <target>Редактировать Параметр</target>
+      </trans-unit>   
+      <trans-unit>
+        <source>Title</source>
+        <target>Название</target>
+      </trans-unit>       
+      <trans-unit>
+        <source>Value</source>
+        <target>Значение</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>News List</source>
+        <target>Новости</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Response List</source>
+        <target>Отзывы</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Price</source>
+        <target>Стоимость</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Consultant</source>
+        <target>Консультант</target>
+      </trans-unit>   
+      <trans-unit>
+        <source>Time</source>
+        <target>Время</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Place</source>
+        <target>Место</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Warning</source>
+        <target>Предупреждение</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>is empty</source>
+        <target>пусто</target>
+      </trans-unit>       
+      <trans-unit>
+        <source>User list</source>
+        <target>Пользователи</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Role</source>
+        <target>Роль</target>
+      </trans-unit>      
+      <trans-unit>
+        <source>Last login</source>
+        <target>Последний логин</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Consultant List</source>
+        <target>Консультанты</target>
+      </trans-unit>
+      <trans-unit>
+        <source>New Consultant</source>
+        <target>Создать косультанта</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Menu root List</source>
+        <target>Меню</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Manage tree</source>
+        <target>Управление деревом</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Manage content</source>
+        <target>Управление содержимым</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Page List</source>
+        <target>Страницы</target>
+      </trans-unit>      
+      <trans-unit>
+        <source>New Page</source>
+        <target>Создать страницу</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Content</source>
+        <target>Содержание</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Fotos list</source>
+        <target>Фотографии</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Slug</source>
+        <target>УРЛ метка</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Remove photo</source>
+        <target>Убрать фото</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>The item was moved successfully.</source>
+        <target>Объект перемещен</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Sending data to server.</source>
+        <target>Отправляем данные на сервер.</target>
+      </trans-unit>      
+      <trans-unit>
+        <source>Menu item Tree Manager</source>
+        <target>Управление деревом меню</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Phone</source>
+        <target>Телефон</target>
+      </trans-unit>      
+      <trans-unit>
+        <source>from</source>
+        <target>от</target>
+      </trans-unit>
+      <trans-unit>
+        <source>to</source>
+        <target>до</target>
+      </trans-unit>   
+  
+      <trans-unit>
+        <source>Comment</source>
+        <target>Комментарий</target>
+      </trans-unit> 
+      
+      <trans-unit>
+        <source>Pages</source>
+        <target>Страницы</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>News</source>
+        <target>Новости</target>
+      </trans-unit>        
+      
+      <trans-unit>
+        <source>Catalog</source>
+        <target>Каталог</target>
+      </trans-unit>      
+      
+      <trans-unit>
+        <source>Attributes</source>
+        <target>Аттрибуты</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Categories</source>
+        <target>Категории</target>
+      </trans-unit>       
+      <trans-unit>
+        <source>Products</source>
+        <target>Продукты</target>
+      </trans-unit>     
+      <trans-unit>
+        <source>Brands</source>
+        <target>Брэнды</target>
+      </trans-unit>   
+      <trans-unit>
+        <source>Types</source>
+        <target>Типы</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Users</source>
+        <target>Пользователи</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Settings</source>
+        <target>Настройки</target>
+      </trans-unit>      
+      <trans-unit>
+        <source>Edit Attribute</source>
+        <target>Редактировать аттрибут</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>New Attribute</source>
+        <target>Создать аттрибут</target>
+      </trans-unit>       
+      <trans-unit>
+        <source>Category List</source>
+        <target>Список категорий</target>
+      </trans-unit>     
+      <trans-unit>
+        <source>New Category</source>
+        <target>Создать категорию</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Edit Category</source>
+        <target>Редактировать категорию</target>
+      </trans-unit>           
+
+      <trans-unit>
+        <source>Product List</source>
+        <target>Список продуктов</target>
+      </trans-unit>     
+      <trans-unit>
+        <source>New Product</source>
+        <target>Создать продукт</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Edit Product</source>
+        <target>Редактировать продукт</target>
+      </trans-unit> 
+      
+      <trans-unit>
+        <source>Brand List</source>
+        <target>Список брэндов</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Edit Brand</source>
+        <target>Редактировать брэнд</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>New Brand</source>
+        <target>Создать брэнд</target>
+      </trans-unit> 
+      
+      
+      <trans-unit>
+        <source>Edit type</source>
+        <target>Редактировать тип</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>New type</source>
+        <target>Создать тип</target>
+      </trans-unit>   
+      
+      <trans-unit>
+        <source>Volume</source>
+        <target>Объем</target>
+      </trans-unit>      
+      <trans-unit>
+        <source>Sku</source>
+        <target>Артикул</target>
+      </trans-unit>     
+      <trans-unit>
+        <source>General</source>
+        <target>Основное</target>
+      </trans-unit>        
+      <trans-unit>
+        <source>Description</source>
+        <target>Описание</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Links</source>
+        <target>Связи</target>
+      </trans-unit>           
+      <trans-unit>
+        <source>Images</source>
+        <target>Картинки</target>
+      </trans-unit>       
+      
+      <trans-unit>
+        <source>Ingredients</source>
+        <target>Состав</target>
+      </trans-unit>     
+      
+      <trans-unit>
+        <source>Blog</source>
+        <target>Блог</target>
+      </trans-unit>             
+
+      <trans-unit>
+        <source>Posts</source>
+        <target>Посты</target>
+      </trans-unit>      
+      
+      <trans-unit>
+        <source>Shop</source>
+        <target>Магазин</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Orders</source>
+        <target>Заказы</target>
+      </trans-unit>      
+      
+      <trans-unit>
+        <source>Order List</source>
+        <target>Список заказов</target>
+      </trans-unit>    
+      <trans-unit>
+        <source>Created at</source>
+        <target>Дата создания</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Total</source>
+        <target>Итог</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Grand total</source>
+        <target>Общий итог</target>
+      </trans-unit>    
+      <trans-unit>
+        <source>from</source>
+        <target>от</target>
+      </trans-unit>
+      <trans-unit>
+        <source>to</source>
+        <target>до</target>
+      </trans-unit>      
+    </body>
+  </file>
+</xliff>

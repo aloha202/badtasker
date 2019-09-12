@@ -1,0 +1,24 @@
+
+class SiteMessageForm_<?php echo $name; ?> extends SiteMessageFormGenerated
+{
+    public function configure()
+    {
+        parent::configure();
+
+        $this->configureSiteMessage('<?php echo $name; ?>');
+    }
+    
+    public function updateObject($values = null)
+    {
+        $object = parent::updateObject($values);
+        $object->setType('<?php echo $name; ?>');
+        return $object;
+    }
+
+    public function doSave($con = null)
+    {
+        parent::doSave($con);
+
+        SiteEvent::fire('site_message_<?php echo $name; ?>', $this->getObject());
+    }
+}

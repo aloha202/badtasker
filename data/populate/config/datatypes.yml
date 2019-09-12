@@ -1,0 +1,33 @@
+datatypes:
+  phone:
+    type: string
+  country:
+    type: string
+    lang: true
+  city: 
+    type: string
+    depends: country
+    lang: true
+  adult_birthday:
+    type: date
+    resource:
+      type: range
+      range: [1940-01-01, 1997-01-01]
+  sex:
+    type: enum
+    values: [m, f]
+    resource:
+      type: self
+  first_name:
+    type: string
+    depends: [gender]
+    lang: true
+    resource:
+      type: txt
+      url: %gender%_names.txt
+  last_name:
+    type: string
+    lang: true
+    resource:
+      type: txt
+      url: last_names.txt

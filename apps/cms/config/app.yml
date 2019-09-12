@@ -1,0 +1,35 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+all:
+  sf_admin_dash:
+    site: 'The App'
+
+    menu:
+#      Content:
+#        icon: barcode
+#        items:
+#          Default Image:
+#            icon: picture
+#            url:          default_image
+#          Text Blocks:
+#            icon: file-text
+#            url:          text_block
+      Users:
+        url: 'user/index'
+        icon: user
+      Projects:
+        icon: barcode
+        items:
+          Websites:
+            icon: picture-o
+            url:          website
+          Projects:
+            icon: file-text
+            url:          website_project
+
+
+    menu2:
+      Test:
+        icon: gear
+        url:          test/index
