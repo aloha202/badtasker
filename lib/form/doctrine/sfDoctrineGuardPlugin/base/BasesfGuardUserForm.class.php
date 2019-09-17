@@ -119,7 +119,7 @@ abstract class BasesfGuardUserForm extends BaseFormDoctrine
         
       'groups_list'      => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardGroup')),
       'permissions_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardPermission')),
-      'projects_list'    => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'WebsiteProject')),
+      'boards_list'      => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Board')),
     ));
 
     $this->setValidators(array(
@@ -153,7 +153,7 @@ abstract class BasesfGuardUserForm extends BaseFormDoctrine
               'updated_at'       => new sfValidatorDateTime(),
             'groups_list'      => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardGroup', 'required' => false)),
       'permissions_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardPermission', 'required' => false)),
-      'projects_list'    => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'WebsiteProject', 'required' => false)),
+      'boards_list'      => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Board', 'required' => false)),
     ));
 
     $this->validatorSchema->setPostValidator(
@@ -209,9 +209,9 @@ abstract class BasesfGuardUserForm extends BaseFormDoctrine
       $this->setDefault('permissions_list', $this->object->Permissions->getPrimaryKeys());
     }
 
-    if (isset($this->widgetSchema['projects_list']))
+    if (isset($this->widgetSchema['boards_list']))
     {
-      $this->setDefault('projects_list', $this->object->Projects->getPrimaryKeys());
+      $this->setDefault('boards_list', $this->object->Boards->getPrimaryKeys());
     }
 
   }
@@ -292,14 +292,14 @@ abstract class BasesfGuardUserForm extends BaseFormDoctrine
     }
   }
 
-  public function saveProjectsList($con = null)
+  public function saveBoardsList($con = null)
   {
     if (!$this->isValid())
     {
       throw $this->getErrorSchema();
     }
 
-    if (!isset($this->widgetSchema['projects_list']))
+    if (!isset($this->widgetSchema['boards_list']))
     {
       // somebody has unset this widget
       return;
@@ -310,8 +310,8 @@ abstract class BasesfGuardUserForm extends BaseFormDoctrine
       $con = $this->getConnection();
     }
 
-    $existing = $this->object->Projects->getPrimaryKeys();
-    $values = $this->getValue('projects_list');
+    $existing = $this->object->Boards->getPrimaryKeys();
+    $values = $this->getValue('boards_list');
     if (!is_array($values))
     {
       $values = array();
@@ -320,13 +320,13 @@ abstract class BasesfGuardUserForm extends BaseFormDoctrine
     $unlink = array_diff($existing, $values);
     if (count($unlink))
     {
-      $this->object->unlink('Projects', array_values($unlink));
+      $this->object->unlink('Boards', array_values($unlink));
     }
 
     $link = array_diff($values, $existing);
     if (count($link))
     {
-      $this->object->link('Projects', array_values($link));
+      $this->object->link('Boards', array_values($link));
     }
   }
 
@@ -338,7 +338,7 @@ abstract class BasesfGuardUserForm extends BaseFormDoctrine
     
     $this->saveGroupsList($con);
     $this->savePermissionsList($con);
-    $this->saveProjectsList($con);
+    $this->saveBoardsList($con);
         
     
     parent::doSave($con);

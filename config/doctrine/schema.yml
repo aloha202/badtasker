@@ -1,3 +1,17 @@
+Board:
+  columns:
+    name: string(255)
+  relations:
+    Users: {class: sfGuardUser, refClass: Board2User, foreignAlias: Boards, foreign: user_id}
+
+Board2User:
+  columns:
+    board_id: {type: integer, primary: true, notnull: true}
+    user_id: {type: integer, primary: true, notnull: true}
+  relations:
+    Board: {onDelete: CASCADE}
+    User: {class: sfGuardUser, local: user_id, onDelete: CASCADE}
+
 DefaultImage:
   connection: doctrine  
   actAs: [ImageBuilder]
@@ -6,7 +20,36 @@ DefaultImage:
     title: string(255)
     image: {type: string(255), notnull: true} 
 
+Task:
+  actAs: [Timestampable]
+  columns:
+    board_id: {type: integer, notnull: true}
+    executer_id: {type: integer, notnull: true}
+    responsible_id: {type: integer, notnull: true}
+    name: string(255)
+    description: string()
+    deadline: date
+    punishment: string()
+    status: {type: enum, values: [in_progress, done, failed], default: in_progress}
+  relations:
+    Board: {foreignAlias: Tasks, onDelete: CASCADE}
+    Executer: {class: sfGuardUser, local: executer_id, foreignAlias: ExecuterTasks, onDelete: CASCADE}
+    Responsible: {class: sfGuardUser, local: responsible_id, foreignAlias: ResponsibleTasks, onDelete: CASCADE}
 
+
+Config:
+  connection: doctrine
+  columns:
+    name: {type: string(255), notnull: true}
+    title: string(255)
+    value: string()
+    help: string()
+    display: {type: enum, values: [user, system]}
+    section: {type: enum, values: [settings, dictionary, system, wiki], default: settings}
+    type: {type: enum, values: [integer, float, boolean, text, enum], default: text}
+    type_enum_values: string()
+    use_wysiwyg: {type: boolean, default: false}
+    is_localized: {type: boolean, default: false}
 
     
 TextBlock:

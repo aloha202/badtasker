@@ -18,6 +18,9 @@ all:
       Users:
         url: 'user/index'
         icon: user
+      Boards:
+        url: 'board/index'
+        icon: cog
 
 
     menu2:
