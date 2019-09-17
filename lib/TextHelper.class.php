@@ -17,7 +17,7 @@ class TextHelper {
     protected static function getData() {
         if (!self::$data) {
             self::$data = array();
-            $cult = sfContext::getInstance()->getUser()->getRealCulture();
+            $cult = sfContext::getInstance()->getUser()->getCulture();
             $q = Doctrine::getTable('TextBlock')
                     ->createQuery('b')
                     ->leftJoin('b.Translation bt')

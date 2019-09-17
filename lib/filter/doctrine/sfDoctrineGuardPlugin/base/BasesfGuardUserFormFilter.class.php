@@ -28,7 +28,7 @@ abstract class BasesfGuardUserFormFilter extends BaseFormFilterDoctrine
       'updated_at'       => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
       'groups_list'      => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardGroup')),
       'permissions_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardPermission')),
-      'projects_list'    => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'WebsiteProject')),
+      'boards_list'      => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Board')),
     ));
 
     $this->setValidators(array(
@@ -47,7 +47,7 @@ abstract class BasesfGuardUserFormFilter extends BaseFormFilterDoctrine
       'updated_at'       => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
       'groups_list'      => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardGroup', 'required' => false)),
       'permissions_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardPermission', 'required' => false)),
-      'projects_list'    => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'WebsiteProject', 'required' => false)),
+      'boards_list'      => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Board', 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('sf_guard_user_filters[%s]');
@@ -96,7 +96,7 @@ abstract class BasesfGuardUserFormFilter extends BaseFormFilterDoctrine
     ;
   }
 
-  public function addProjectsListColumnQuery(Doctrine_Query $query, $field, $values)
+  public function addBoardsListColumnQuery(Doctrine_Query $query, $field, $values)
   {
     if (!is_array($values))
     {
@@ -109,8 +109,8 @@ abstract class BasesfGuardUserFormFilter extends BaseFormFilterDoctrine
     }
 
     $query
-      ->leftJoin($query->getRootAlias().'.WebsiteProject2sfGuardUser WebsiteProject2sfGuardUser')
-      ->andWhereIn('WebsiteProject2sfGuardUser.website_project_id', $values)
+      ->leftJoin($query->getRootAlias().'.Board2User Board2User')
+      ->andWhereIn('Board2User.board_id', $values)
     ;
   }
 
@@ -138,7 +138,7 @@ abstract class BasesfGuardUserFormFilter extends BaseFormFilterDoctrine
       'updated_at'       => 'Date',
       'groups_list'      => 'ManyKey',
       'permissions_list' => 'ManyKey',
-      'projects_list'    => 'ManyKey',
+      'boards_list'      => 'ManyKey',
     );
   }
 }

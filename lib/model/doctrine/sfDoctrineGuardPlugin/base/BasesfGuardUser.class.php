@@ -24,53 +24,53 @@ Doctrine_Manager::getInstance()->bindComponent('sfGuardUser', 'doctrine');
  * @property Doctrine_Collection $sfGuardUserGroup
  * @property sfGuardRememberKey $RememberKeys
  * @property sfGuardForgotPassword $ForgotPassword
- * @property Doctrine_Collection $Projects
- * @property UserSettings $UserSettings
- * @property Doctrine_Collection $WebappConfigs
- * @property Doctrine_Collection $WebsiteProject2sfGuardUser
+ * @property Doctrine_Collection $Boards
+ * @property Doctrine_Collection $Board2User
+ * @property Doctrine_Collection $ExecuterTasks
+ * @property Doctrine_Collection $ResponsibleTasks
  * 
- * @method string                getFirstName()                  Returns the current record's "first_name" value
- * @method string                getLastName()                   Returns the current record's "last_name" value
- * @method string                getEmailAddress()               Returns the current record's "email_address" value
- * @method string                getUsername()                   Returns the current record's "username" value
- * @method string                getAlgorithm()                  Returns the current record's "algorithm" value
- * @method string                getSalt()                       Returns the current record's "salt" value
- * @method string                getPassword()                   Returns the current record's "password" value
- * @method boolean               getIsActive()                   Returns the current record's "is_active" value
- * @method boolean               getIsSuperAdmin()               Returns the current record's "is_super_admin" value
- * @method timestamp             getLastLogin()                  Returns the current record's "last_login" value
- * @method enum                  getLang()                       Returns the current record's "lang" value
- * @method Doctrine_Collection   getGroups()                     Returns the current record's "Groups" collection
- * @method Doctrine_Collection   getPermissions()                Returns the current record's "Permissions" collection
- * @method Doctrine_Collection   getSfGuardUserPermission()      Returns the current record's "sfGuardUserPermission" collection
- * @method Doctrine_Collection   getSfGuardUserGroup()           Returns the current record's "sfGuardUserGroup" collection
- * @method sfGuardRememberKey    getRememberKeys()               Returns the current record's "RememberKeys" value
- * @method sfGuardForgotPassword getForgotPassword()             Returns the current record's "ForgotPassword" value
- * @method Doctrine_Collection   getProjects()                   Returns the current record's "Projects" collection
- * @method UserSettings          getUserSettings()               Returns the current record's "UserSettings" value
- * @method Doctrine_Collection   getWebappConfigs()              Returns the current record's "WebappConfigs" collection
- * @method Doctrine_Collection   getWebsiteProject2sfGuardUser() Returns the current record's "WebsiteProject2sfGuardUser" collection
- * @method sfGuardUser           setFirstName()                  Sets the current record's "first_name" value
- * @method sfGuardUser           setLastName()                   Sets the current record's "last_name" value
- * @method sfGuardUser           setEmailAddress()               Sets the current record's "email_address" value
- * @method sfGuardUser           setUsername()                   Sets the current record's "username" value
- * @method sfGuardUser           setAlgorithm()                  Sets the current record's "algorithm" value
- * @method sfGuardUser           setSalt()                       Sets the current record's "salt" value
- * @method sfGuardUser           setPassword()                   Sets the current record's "password" value
- * @method sfGuardUser           setIsActive()                   Sets the current record's "is_active" value
- * @method sfGuardUser           setIsSuperAdmin()               Sets the current record's "is_super_admin" value
- * @method sfGuardUser           setLastLogin()                  Sets the current record's "last_login" value
- * @method sfGuardUser           setLang()                       Sets the current record's "lang" value
- * @method sfGuardUser           setGroups()                     Sets the current record's "Groups" collection
- * @method sfGuardUser           setPermissions()                Sets the current record's "Permissions" collection
- * @method sfGuardUser           setSfGuardUserPermission()      Sets the current record's "sfGuardUserPermission" collection
- * @method sfGuardUser           setSfGuardUserGroup()           Sets the current record's "sfGuardUserGroup" collection
- * @method sfGuardUser           setRememberKeys()               Sets the current record's "RememberKeys" value
- * @method sfGuardUser           setForgotPassword()             Sets the current record's "ForgotPassword" value
- * @method sfGuardUser           setProjects()                   Sets the current record's "Projects" collection
- * @method sfGuardUser           setUserSettings()               Sets the current record's "UserSettings" value
- * @method sfGuardUser           setWebappConfigs()              Sets the current record's "WebappConfigs" collection
- * @method sfGuardUser           setWebsiteProject2sfGuardUser() Sets the current record's "WebsiteProject2sfGuardUser" collection
+ * @method string                getFirstName()             Returns the current record's "first_name" value
+ * @method string                getLastName()              Returns the current record's "last_name" value
+ * @method string                getEmailAddress()          Returns the current record's "email_address" value
+ * @method string                getUsername()              Returns the current record's "username" value
+ * @method string                getAlgorithm()             Returns the current record's "algorithm" value
+ * @method string                getSalt()                  Returns the current record's "salt" value
+ * @method string                getPassword()              Returns the current record's "password" value
+ * @method boolean               getIsActive()              Returns the current record's "is_active" value
+ * @method boolean               getIsSuperAdmin()          Returns the current record's "is_super_admin" value
+ * @method timestamp             getLastLogin()             Returns the current record's "last_login" value
+ * @method enum                  getLang()                  Returns the current record's "lang" value
+ * @method Doctrine_Collection   getGroups()                Returns the current record's "Groups" collection
+ * @method Doctrine_Collection   getPermissions()           Returns the current record's "Permissions" collection
+ * @method Doctrine_Collection   getSfGuardUserPermission() Returns the current record's "sfGuardUserPermission" collection
+ * @method Doctrine_Collection   getSfGuardUserGroup()      Returns the current record's "sfGuardUserGroup" collection
+ * @method sfGuardRememberKey    getRememberKeys()          Returns the current record's "RememberKeys" value
+ * @method sfGuardForgotPassword getForgotPassword()        Returns the current record's "ForgotPassword" value
+ * @method Doctrine_Collection   getBoards()                Returns the current record's "Boards" collection
+ * @method Doctrine_Collection   getBoard2User()            Returns the current record's "Board2User" collection
+ * @method Doctrine_Collection   getExecuterTasks()         Returns the current record's "ExecuterTasks" collection
+ * @method Doctrine_Collection   getResponsibleTasks()      Returns the current record's "ResponsibleTasks" collection
+ * @method sfGuardUser           setFirstName()             Sets the current record's "first_name" value
+ * @method sfGuardUser           setLastName()              Sets the current record's "last_name" value
+ * @method sfGuardUser           setEmailAddress()          Sets the current record's "email_address" value
+ * @method sfGuardUser           setUsername()              Sets the current record's "username" value
+ * @method sfGuardUser           setAlgorithm()             Sets the current record's "algorithm" value
+ * @method sfGuardUser           setSalt()                  Sets the current record's "salt" value
+ * @method sfGuardUser           setPassword()              Sets the current record's "password" value
+ * @method sfGuardUser           setIsActive()              Sets the current record's "is_active" value
+ * @method sfGuardUser           setIsSuperAdmin()          Sets the current record's "is_super_admin" value
+ * @method sfGuardUser           setLastLogin()             Sets the current record's "last_login" value
+ * @method sfGuardUser           setLang()                  Sets the current record's "lang" value
+ * @method sfGuardUser           setGroups()                Sets the current record's "Groups" collection
+ * @method sfGuardUser           setPermissions()           Sets the current record's "Permissions" collection
+ * @method sfGuardUser           setSfGuardUserPermission() Sets the current record's "sfGuardUserPermission" collection
+ * @method sfGuardUser           setSfGuardUserGroup()      Sets the current record's "sfGuardUserGroup" collection
+ * @method sfGuardUser           setRememberKeys()          Sets the current record's "RememberKeys" value
+ * @method sfGuardUser           setForgotPassword()        Sets the current record's "ForgotPassword" value
+ * @method sfGuardUser           setBoards()                Sets the current record's "Boards" collection
+ * @method sfGuardUser           setBoard2User()            Sets the current record's "Board2User" collection
+ * @method sfGuardUser           setExecuterTasks()         Sets the current record's "ExecuterTasks" collection
+ * @method sfGuardUser           setResponsibleTasks()      Sets the current record's "ResponsibleTasks" collection
  * 
  * @package    cms
  * @subpackage model
@@ -175,22 +175,22 @@ abstract class BasesfGuardUser extends sfDoctrineRecord
              'local' => 'id',
              'foreign' => 'user_id'));
 
-        $this->hasMany('WebsiteProject as Projects', array(
-             'refClass' => 'WebsiteProject2sfGuardUser',
-             'local' => 'sf_guard_user_id',
-             'foreign' => 'website_project_id'));
+        $this->hasMany('Board as Boards', array(
+             'refClass' => 'Board2User',
+             'local' => 'user_id',
+             'foreign' => 'board_id'));
 
-        $this->hasOne('UserSettings', array(
+        $this->hasMany('Board2User', array(
              'local' => 'id',
              'foreign' => 'user_id'));
 
-        $this->hasMany('WebappConfig as WebappConfigs', array(
+        $this->hasMany('Task as ExecuterTasks', array(
              'local' => 'id',
-             'foreign' => 'user_id'));
+             'foreign' => 'executer_id'));
 
-        $this->hasMany('WebsiteProject2sfGuardUser', array(
+        $this->hasMany('Task as ResponsibleTasks', array(
              'local' => 'id',
-             'foreign' => 'sf_guard_user_id'));
+             'foreign' => 'responsible_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable(array(
              ));
