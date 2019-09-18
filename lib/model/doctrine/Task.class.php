@@ -12,4 +12,15 @@
  */
 class Task extends BaseTask
 {
+
+    public function getTimelineCssClass()
+    {
+        return $this->deadline == date('Y-m-d') ? 'bg-red' : 'bg-green';
+    }
+
+    public function getDeadlineCssClass()
+    {
+        return $this->deadline == date('Y-m-d') ? 'deadline-today' : '';
+    }
+
 }

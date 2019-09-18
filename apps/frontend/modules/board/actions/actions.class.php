@@ -18,5 +18,21 @@ class boardActions extends sfActions
   public function executeShow(sfWebRequest $request)
   {
 
+
+        $this->Board = Q::c('Board', 'b')
+            ->where('b.Users.id = ?', $this->getUser()->getGuardUser()->getId())
+            ->andWhere('b.id = ?', $request->getParameter('id'))
+            ->fetchOne()
+            ;
+        $this->forward404Unless($this->Board);
+
+
+        $this->Tasks = Q::c('Task', 't')
+            ->where('t.board_id = ?', $this->Board->id)
+            ->andWhere('t.deadline >= ?', date('Y-m-d'))
+            ->andWhere('t.status = ?', 'in_progress ')
+            ->orderBy('t.deadline DESC')
+            ->execute()
+            ;
   }
 }

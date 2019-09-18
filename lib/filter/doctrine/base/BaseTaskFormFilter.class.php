@@ -21,8 +21,10 @@ abstract class BaseTaskFormFilter extends BaseFormFilterDoctrine
       'deadline'       => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
       'punishment'     => new sfWidgetFormFilterInput(),
       'status'         => new sfWidgetFormChoice(array('choices' => array('' => '', 'in_progress' => 'in_progress', 'done' => 'done', 'failed' => 'failed'))),
+      'comment'        => new sfWidgetFormFilterInput(),
       'created_at'     => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
       'updated_at'     => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'user_id'        => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
@@ -34,8 +36,10 @@ abstract class BaseTaskFormFilter extends BaseFormFilterDoctrine
       'deadline'       => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
       'punishment'     => new sfValidatorPass(array('required' => false)),
       'status'         => new sfValidatorChoice(array('required' => false, 'choices' => array('in_progress' => 'in_progress', 'done' => 'done', 'failed' => 'failed'))),
+      'comment'        => new sfValidatorPass(array('required' => false)),
       'created_at'     => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
       'updated_at'     => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
+      'user_id'        => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('User'), 'column' => 'id')),
     ));
 
     $this->widgetSchema->setNameFormat('task_filters[%s]');
@@ -65,8 +69,10 @@ abstract class BaseTaskFormFilter extends BaseFormFilterDoctrine
       'deadline'       => 'Date',
       'punishment'     => 'Text',
       'status'         => 'Enum',
+      'comment'        => 'Text',
       'created_at'     => 'Date',
       'updated_at'     => 'Date',
+      'user_id'        => 'ForeignKey',
     );
   }
 }

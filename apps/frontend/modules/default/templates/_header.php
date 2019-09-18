@@ -19,6 +19,7 @@
                             <?php endforeach; ?>
                         </ul>
                     </li>
+                    <li><a href="<?php echo url_for('task/create'); ?>"><span>+</span> Добавить задачу</a></li>
                     <li><a href="<?php echo url_for('auth/signout'); ?>">Log out</a></li>
                 </ul>
 

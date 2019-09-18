@@ -5,15 +5,16 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Top Navigation
-                    <small>Example 2.0</small>
+                    Добро пожаловать
+                    <small>Bad tasker 0.1.2</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                    <li><a href="<?php echo url_for('task/create'); ?>"><i class="fa fa-dashboard"></i> +</a></li>
                     <li class="active">Dashboard</li>
                 </ol>
             </section>
 
+            <?php /*
             <!-- Main content -->
             <section class="content">
                 <div class="callout callout-info">
@@ -35,3 +36,4 @@
             </section><!-- /.content -->
 
 
+*/ ?>

@@ -85,6 +85,13 @@ abstract class BaseTaskForm extends BaseFormDoctrine
        
             
             
+              'comment'        => new sfWidgetFormTextarea(),
+      
+        
+        
+       
+            
+            
               'created_at'     => new sfWidgetFormDateTime(),
       
         
@@ -93,6 +100,13 @@ abstract class BaseTaskForm extends BaseFormDoctrine
             
             
               'updated_at'     => new sfWidgetFormDateTime(),
+      
+        
+        
+       
+            
+            
+              'user_id'        => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'add_empty' => true)),
       
         
         
@@ -118,9 +132,13 @@ abstract class BaseTaskForm extends BaseFormDoctrine
                   
               'status'         => new sfValidatorChoice(array('choices' => array(0 => 'in_progress', 1 => 'done', 2 => 'failed'), 'required' => false)),
                   
+              'comment'        => new sfValidatorString(array('required' => false)),
+                  
               'created_at'     => new sfValidatorDateTime(),
                   
               'updated_at'     => new sfValidatorDateTime(),
+                  
+              'user_id'        => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'required' => false)),
           ));
 
     $this->widgetSchema->setNameFormat('task[%s]');

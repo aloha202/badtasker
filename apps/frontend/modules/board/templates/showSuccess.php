@@ -1,60 +1,73 @@
+<div class="timeline-wrapper">
 <ul class="timeline">
 
-    <!-- timeline time label -->
+    <?php $curDate = '1970-01-01'; ?>
+    <?php foreach($Tasks as $Task): ?>
+        <?php if($Task->deadline != $curDate):
+            $curDate = $Task->deadline;
+            ?>
+
     <li class="time-label">
-        <span class="bg-red">
-            10 Feb. 2014
+        <span class="<?php echo $Task->getTimelineCssClass(); ?>">
+            <?php echo format_date($Task->deadline, 'D'); ?>
         </span>
     </li>
+
     <!-- /.timeline-label -->
+            <?php endif; ?>
 
     <!-- timeline item -->
     <li>
         <!-- timeline icon -->
         <i class="fa fa-envelope bg-blue"></i>
-        <div class="timeline-item">
-            <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+        <div class="timeline-item <?php echo $Task->getDeadlineCssClass(); ?>">
+            <span class="time">
+                                <span class="responsible"  title="Ответственный">
+                    <i class="fa fa-user" style=""></i>
+                                    <?php echo $Task->getResponsible()->getUsername(); ?>
+                </span>
+                <i class="fa fa-ban"></i> <?php echo $Task->punishment; ?>
+            </span>
 
-            <h3 class="timeline-header"><a href="#">Support Team</a> ...</h3>
+            <h3 class="timeline-header"><a href="#" class=""><?php echo $Task->name; ?></a></h3>
 
             <div class="timeline-body">
                 ...
-                Content goes here
+                <?php echo $Task->description; ?>
             </div>
 
             <div class='timeline-footer'>
-                <a class="btn btn-primary btn-xs">...</a>
+                <span class="executer" title="Исполнитель">
+                    <i class="fa fa-user" style=";"></i>
+                    <?php echo $Task->getExecuter()->getUsername(); ?>
+                </span>
+                <?php if($sf_user->isExecuter($Task)): ?>
+                <a class="btn btn-primary btn-xs" href="<?php echo url_for('@task_finished?id=' . $Task->id); ?>">Готово</a>
+                <?php endif; ?>
             </div>
         </div>
     </li>
     <!-- END timeline item -->
 
-    <li class="time-label">
-        <span class="bg-green">
-            09 Feb. 2014
-        </span>
-    </li>
-    <!-- /.timeline-label -->
+    <?php endforeach; ?>
 
-    <!-- timeline item -->
-    <li>
-        <!-- timeline icon -->
-        <i class="fa fa-envelope bg-blue"></i>
-        <div class="timeline-item">
-            <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
-
-            <h3 class="timeline-header"><a href="#">Support Team</a> ...</h3>
-
-            <div class="timeline-body">
-                ...
-                Content goes here
-            </div>
-
-            <div class='timeline-footer'>
-                <a class="btn btn-primary btn-xs">...</a>
-            </div>
-        </div>
-    </li>
 
 
 </ul>
+</div>
+
+<script type="text/javascript">
+
+    $(function () {
+
+
+        var hfH = $('header').outerHeight() + $('footer').outerHeight();
+
+        $('.timeline-wrapper').css('height', $(window).height() - hfH);
+
+
+        $('.timeline-wrapper').scrollTop($('.timeline-wrapper')[0].scrollHeight);
+
+    });
+
+</script>

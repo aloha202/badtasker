@@ -21,7 +21,10 @@ DefaultImage:
     image: {type: string(255), notnull: true} 
 
 Task:
-  actAs: [Timestampable]
+  actAs:
+    Timestampable: ~
+    User:
+      cookie: false
   columns:
     board_id: {type: integer, notnull: true}
     executer_id: {type: integer, notnull: true}
@@ -31,6 +34,7 @@ Task:
     deadline: date
     punishment: string()
     status: {type: enum, values: [in_progress, done, failed], default: in_progress}
+    comment: string()
   relations:
     Board: {foreignAlias: Tasks, onDelete: CASCADE}
     Executer: {class: sfGuardUser, local: executer_id, foreignAlias: ExecuterTasks, onDelete: CASCADE}
