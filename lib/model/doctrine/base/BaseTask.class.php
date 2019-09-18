@@ -13,6 +13,7 @@
  * @property date $deadline
  * @property string $punishment
  * @property enum $status
+ * @property string $comment
  * @property Board $Board
  * @property sfGuardUser $Executer
  * @property sfGuardUser $Responsible
@@ -25,6 +26,7 @@
  * @method date        getDeadline()       Returns the current record's "deadline" value
  * @method string      getPunishment()     Returns the current record's "punishment" value
  * @method enum        getStatus()         Returns the current record's "status" value
+ * @method string      getComment()        Returns the current record's "comment" value
  * @method Board       getBoard()          Returns the current record's "Board" value
  * @method sfGuardUser getExecuter()       Returns the current record's "Executer" value
  * @method sfGuardUser getResponsible()    Returns the current record's "Responsible" value
@@ -36,6 +38,7 @@
  * @method Task        setDeadline()       Sets the current record's "deadline" value
  * @method Task        setPunishment()     Sets the current record's "punishment" value
  * @method Task        setStatus()         Sets the current record's "status" value
+ * @method Task        setComment()        Sets the current record's "comment" value
  * @method Task        setBoard()          Sets the current record's "Board" value
  * @method Task        setExecuter()       Sets the current record's "Executer" value
  * @method Task        setResponsible()    Sets the current record's "Responsible" value
@@ -87,6 +90,10 @@ abstract class BaseTask extends sfDoctrineRecord
              ),
              'default' => 'in_progress',
              ));
+        $this->hasColumn('comment', 'string', null, array(
+             'type' => 'string',
+             'length' => '',
+             ));
     }
 
     public function setUp()
@@ -107,8 +114,11 @@ abstract class BaseTask extends sfDoctrineRecord
              'foreign' => 'id',
              'onDelete' => 'CASCADE'));
 
-        $timestampable0 = new Doctrine_Template_Timestampable(array(
+        $timestampable0 = new Doctrine_Template_Timestampable();
+        $user0 = new Doctrine_Template_User(array(
+             'cookie' => false,
              ));
         $this->actAs($timestampable0);
+        $this->actAs($user0);
     }
 }

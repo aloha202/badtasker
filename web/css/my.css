@@ -1,0 +1,39 @@
+.my-form-table{
+    width: 100%;
+}
+.my-form-table th{
+    width: 100px;
+}
+.my-form-table th,
+.my-form-table td{
+    padding: 5px;
+}
+.my-form-table input[type='text'],
+.my-form-table textarea{
+    width: 70%;
+}
+
+
+.executer .fa{
+    color: #0073B7;
+}
+.responsible .fa{
+    color: #DD4B39;
+}
+
+
+.deadline-today .timeline-header a {
+
+    color: #DD4B39;
+}
+
+
+.timeline-wrapper{
+
+    overflow: auto;
+
+}
+
+footer{
+
+}
