@@ -21,6 +21,9 @@
     color: #DD4B39;
 }
 
+nav li a.red{
+    color: red;
+}
 
 .deadline-today .timeline-header a {
 
@@ -36,4 +39,15 @@
 
 footer{
 
+}
+
+.container-padding{
+    padding: 20px 0;
+}
+
+.error_list{
+    list-style: none;
+    color: red;
+    margin-left: 0;
+    padding-left: 0;
 }

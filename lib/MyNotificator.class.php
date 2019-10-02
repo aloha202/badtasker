@@ -51,6 +51,15 @@ class MyNotificator
                     P::XMail($Creator->getEmailAddress(), $subject, $messageOwner);
                 }
                 break;
+
+            case 'punishment_complete':
+                $subject = "По задаче " . $Task->getName() . " получено наказание";
+                $message = $Task->getName() . '<br><i>' . $Task->getDescription() . '</i>';
+                $message .= "<br><strong style='color: #8b1014'>Наказание получено пользователем {$Responsible->username}</strong><br >";
+                $message .=  "Наказание: {$Task->getPunishment()} <br>";
+                $message .=  "Коментарий: {$Task->getPunishmentComment()}";
+                P::XMail($Creator->getEmailAddress(), $subject, $message);
+                break;
         }
 
 
