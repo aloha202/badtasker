@@ -20,6 +20,11 @@
                         </ul>
                     </li>
                     <li><a href="<?php echo url_for('task/create'); ?>"><span>+</span> Добавить задачу</a></li>
+                    <li>
+                        <a href="<?php echo url_for('task/failed'); ?>" class="red"><span></span> Провалены<?php if($failed_count): echo "({$failed_count})"; endif; ?></a>
+
+                    </li>
+                    <li><a href="<?php echo url_for('task/archive'); ?>"><i class="fa fa-book"></i> Архив</a></li>
                     <li><a href="<?php echo url_for('auth/signout'); ?>">Log out</a></li>
                 </ul>
 

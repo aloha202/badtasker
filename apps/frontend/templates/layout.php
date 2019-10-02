@@ -12,9 +12,10 @@
           <!-- Full Width Column -->
           <div class="content-wrapper">
               <div class="container">
+                  <div class="container-padding">
 
         <?php echo $sf_content ?>
-
+                  </div>
               </div><!-- /.container -->
           </div><!-- /.content-wrapper -->
 
@@ -24,7 +25,7 @@
                   <div class="pull-right hidden-xs">
                       <b>Version</b> 2.0
                   </div>
-                  <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
+                  <strong>Copyright &copy; 2018-<?php echo date('Y'); ?> <a href="http://digitally-yours.org">Digitally Yours</a>.</strong> All rights reserved.
               </div><!-- /.container -->
           </footer>
 
