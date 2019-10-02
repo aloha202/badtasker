@@ -21,8 +21,8 @@ class MyNotificator
                 if($Executer->getId() == $Responsible->getId()){
                     P::XMail($Executer->getEmailAddress(), 'Вам поставлена задача ' . $Task->getName() . '. Вы же являетесь ответственным', $message);
                 }else {
-                    P::XMail($Executer->getEmailAddress(), 'Вам поставлена задача', $Task->getName());
-                    P::XMail($Responsible->getEmailAddress(), 'Вы ответственны по задаче', $Task->getName());
+                    P::XMail($Executer->getEmailAddress(), 'Вам поставлена задача ' . $Task->getName(), $message);
+                    P::XMail($Responsible->getEmailAddress(), 'Вы ответственны по задаче ' . $Task->getName(), $message);
                 }
 
                 break;
@@ -39,7 +39,7 @@ class MyNotificator
                 break;
 
             case 'failed':
-                $subject = "Задача " . $Task->getName() . "провалена";
+                $subject = "Задача " . $Task->getName() . " провалена";
                 $message = $Task->getName() . '<br><i>' . $Task->getDescription() . '</i>';
                 $message .= "<br><strong style='color: red'>Задача провалена</strong><br >";
                 $messageResponsible = $message .  "Вас ожидает наказание: " . $Task->getPunishment();
