@@ -33,8 +33,10 @@ Task:
     description: string()
     deadline: date
     punishment: string()
-    status: {type: enum, values: [in_progress, done, failed], default: in_progress}
+    status: {type: enum, values: [in_progress, done, failed, archived], default: in_progress}
     comment: string()
+    is_failed: {type: boolean, default: false}
+    punishment_comment: string()
   relations:
     Board: {foreignAlias: Tasks, onDelete: CASCADE}
     Executer: {class: sfGuardUser, local: executer_id, foreignAlias: ExecuterTasks, onDelete: CASCADE}
