@@ -18,6 +18,8 @@ generator:
         display: [name, Executer, deadline, status, updated_at]
         object_actions:
           show: {action: show}
+          _edit: ~
+          _delete: ~
       filter:  ~
       form:    ~
       edit:    ~
