@@ -21,6 +21,9 @@ all:
       Boards:
         url: 'board/index'
         icon: cog
+      Task:
+        url: 'task/index'
+        icon: gear
 
 
     menu2:
