@@ -30,5 +30,15 @@
           </footer>
 
       </div><!-- ./wrapper -->
+
+  <script type="text/javascript">
+
+      $(function () {
+         $('.datepicker').datepicker({
+             dateFormat: 'dd.mm.yy',
+           minDate: 0, maxDate: "+1M +10D"
+         });
+      });
+  </script>
   </body>
 </html>

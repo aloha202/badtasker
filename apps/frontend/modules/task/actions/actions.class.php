@@ -80,6 +80,10 @@ class taskActions extends sfActions
       $this->processForm($this->form, $request, 'task/failed');
   }
 
+  public function executeDeadline(sfWebRequest $request){
+
+  }
+
   protected function processForm($form, $request, $redirect = null)
   {
       if($request->isMethod('post')){

@@ -22,105 +22,112 @@ abstract class BaseTaskForm extends BaseFormDoctrine
        
             
             
-              'id'                 => new sfWidgetFormInputHidden(),
+              'id'                  => new sfWidgetFormInputHidden(),
       
         
         
        
             
             
-              'board_id'           => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Board'), 'add_empty' => false)),
+              'board_id'            => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Board'), 'add_empty' => false)),
       
         
         
        
             
             
-              'executer_id'        => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Executer'), 'add_empty' => false)),
+              'executer_id'         => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Executer'), 'add_empty' => false)),
       
         
         
        
             
             
-              'responsible_id'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Responsible'), 'add_empty' => false)),
+              'responsible_id'      => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Responsible'), 'add_empty' => false)),
       
         
         
        
             
             
-              'name'               => new sfWidgetFormInputText(),
+              'name'                => new sfWidgetFormInputText(),
       
         
         
        
             
             
-              'description'        => new sfWidgetFormTextarea(),
+              'description'         => new sfWidgetFormTextarea(),
       
         
         
        
             
             
-              'deadline'           => new sfWidgetFormDate(),
+              'deadline'            => new sfWidgetFormDate(),
       
         
         
        
             
             
-              'punishment'         => new sfWidgetFormTextarea(),
+              'punishment'          => new sfWidgetFormTextarea(),
       
         
         
        
             
             
-              'status'             => new sfWidgetFormChoice(array('choices' => array('in_progress' => 'in_progress', 'done' => 'done', 'failed' => 'failed', 'archived' => 'archived'))),
+              'status'              => new sfWidgetFormChoice(array('choices' => array('in_progress' => 'in_progress', 'done' => 'done', 'failed' => 'failed', 'archived' => 'archived'))),
       
         
         
        
             
             
-              'comment'            => new sfWidgetFormTextarea(),
+              'comment'             => new sfWidgetFormTextarea(),
       
         
         
        
             
             
-              'is_failed'          => new sfWidgetFormInputCheckbox(),
+              'is_failed'           => new sfWidgetFormInputCheckbox(),
       
         
         
        
             
             
-              'punishment_comment' => new sfWidgetFormTextarea(),
+              'punishment_comment'  => new sfWidgetFormTextarea(),
       
         
         
        
             
             
-              'created_at'         => new sfWidgetFormDateTime(),
+              'is_deadline_changed' => new sfWidgetFormInputCheckbox(),
       
         
         
        
             
             
-              'updated_at'         => new sfWidgetFormDateTime(),
+              'created_at'          => new sfWidgetFormDateTime(),
       
         
         
        
             
             
-              'user_id'            => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'add_empty' => true)),
+              'updated_at'          => new sfWidgetFormDateTime(),
+      
+        
+        
+       
+            
+            
+              'user_id'             => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'add_empty' => true)),
       
         
         
@@ -128,35 +135,37 @@ abstract class BaseTaskForm extends BaseFormDoctrine
 
     $this->setValidators(array(
             
-              'id'                 => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
+              'id'                  => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
                   
-              'board_id'           => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Board'))),
+              'board_id'            => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Board'))),
                   
-              'executer_id'        => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Executer'))),
+              'executer_id'         => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Executer'))),
                   
-              'responsible_id'     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Responsible'))),
+              'responsible_id'      => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Responsible'))),
                   
-              'name'               => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+              'name'                => new sfValidatorString(array('max_length' => 255, 'required' => false)),
                   
-              'description'        => new sfValidatorString(array('required' => false)),
+              'description'         => new sfValidatorString(array('required' => false)),
                   
-              'deadline'           => new sfValidatorDate(array('required' => false)),
+              'deadline'            => new sfValidatorDate(array('required' => false)),
                   
-              'punishment'         => new sfValidatorString(array('required' => false)),
+              'punishment'          => new sfValidatorString(array('required' => false)),
                   
-              'status'             => new sfValidatorChoice(array('choices' => array(0 => 'in_progress', 1 => 'done', 2 => 'failed', 3 => 'archived'), 'required' => false)),
+              'status'              => new sfValidatorChoice(array('choices' => array(0 => 'in_progress', 1 => 'done', 2 => 'failed', 3 => 'archived'), 'required' => false)),
                   
-              'comment'            => new sfValidatorString(array('required' => false)),
+              'comment'             => new sfValidatorString(array('required' => false)),
                   
-              'is_failed'          => new sfValidatorBoolean(array('required' => false)),
+              'is_failed'           => new sfValidatorBoolean(array('required' => false)),
                   
-              'punishment_comment' => new sfValidatorString(array('required' => false)),
+              'punishment_comment'  => new sfValidatorString(array('required' => false)),
                   
-              'created_at'         => new sfValidatorDateTime(),
+              'is_deadline_changed' => new sfValidatorBoolean(array('required' => false)),
                   
-              'updated_at'         => new sfValidatorDateTime(),
+              'created_at'          => new sfValidatorDateTime(),
                   
-              'user_id'            => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'required' => false)),
+              'updated_at'          => new sfValidatorDateTime(),
+                  
+              'user_id'             => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'required' => false)),
           ));
 
     $this->widgetSchema->setNameFormat('task[%s]');

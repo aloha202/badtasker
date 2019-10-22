@@ -44,6 +44,9 @@
                 <?php if($sf_user->isExecuter($Task)): ?>
                 <a class="btn btn-primary btn-xs" href="<?php echo url_for('@task_finished?id=' . $Task->id); ?>">Готово</a>
                 <?php endif; ?>
+                <?php if($sf_user->isCreator($Task) && !$Task->is_deadline_changed): ?>
+                    <a class="btn btn-success btn-xs" href="<?php echo url_for('task/deadline?id=' . $Task->id); ?>">Изменить дедлайн</a>
+                <?php endif; ?>
             </div>
         </div>
     </li>

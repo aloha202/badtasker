@@ -13,5 +13,9 @@ class TaskForm extends BaseTaskForm
   public function configure()
   {
 
+
+      $this->widgetSchema['deadline'] = new sfWidgetFormInputText([], [
+          'class' => 'datepicker'
+      ]);
   }
 }
