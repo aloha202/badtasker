@@ -37,6 +37,7 @@ Task:
     comment: string()
     is_failed: {type: boolean, default: false}
     punishment_comment: string()
+    is_deadline_changed: boolean
   relations:
     Board: {foreignAlias: Tasks, onDelete: CASCADE}
     Executer: {class: sfGuardUser, local: executer_id, foreignAlias: ExecuterTasks, onDelete: CASCADE}

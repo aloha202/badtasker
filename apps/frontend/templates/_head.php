@@ -20,6 +20,9 @@
 <link href="/css/system.css" rel="stylesheet" type="text/css" />
 <link href="/css/my.css" rel="stylesheet" type="text/css" />
 
+
+<link rel="stylesheet" type="text/css" media="screen" href="/css/ui-lightness/jquery-ui-1.8.16.custom.css" />
+
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -46,6 +49,7 @@
 <script src="/js/system.js" type="text/javascript"></script>
 <script src="/js/library/jquery.imgareaselect.js" type="text/javascript"></script>
 <script src="/js/admin_front.js" type="text/javascript"></script>
+<script src="/lanceng/more/jquery-ui-1.11.1/jquery-ui.js"></script>
 
 
 

@@ -13,4 +13,9 @@ class myUser extends sfGuardSecurityUser
         return $Task->responsible_id == $this->getGuardUser()->id;
     }
 
+
+    public function isCreator($Task){
+        return $Task->user_id == $this->getGuardUser()->id;
+    }
+
 }

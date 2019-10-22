@@ -16,38 +16,41 @@
  * @property string $comment
  * @property boolean $is_failed
  * @property string $punishment_comment
+ * @property boolean $is_deadline_changed
  * @property Board $Board
  * @property sfGuardUser $Executer
  * @property sfGuardUser $Responsible
  * 
- * @method integer     getBoardId()            Returns the current record's "board_id" value
- * @method integer     getExecuterId()         Returns the current record's "executer_id" value
- * @method integer     getResponsibleId()      Returns the current record's "responsible_id" value
- * @method string      getName()               Returns the current record's "name" value
- * @method string      getDescription()        Returns the current record's "description" value
- * @method date        getDeadline()           Returns the current record's "deadline" value
- * @method string      getPunishment()         Returns the current record's "punishment" value
- * @method enum        getStatus()             Returns the current record's "status" value
- * @method string      getComment()            Returns the current record's "comment" value
- * @method boolean     getIsFailed()           Returns the current record's "is_failed" value
- * @method string      getPunishmentComment()  Returns the current record's "punishment_comment" value
- * @method Board       getBoard()              Returns the current record's "Board" value
- * @method sfGuardUser getExecuter()           Returns the current record's "Executer" value
- * @method sfGuardUser getResponsible()        Returns the current record's "Responsible" value
- * @method Task        setBoardId()            Sets the current record's "board_id" value
- * @method Task        setExecuterId()         Sets the current record's "executer_id" value
- * @method Task        setResponsibleId()      Sets the current record's "responsible_id" value
- * @method Task        setName()               Sets the current record's "name" value
- * @method Task        setDescription()        Sets the current record's "description" value
- * @method Task        setDeadline()           Sets the current record's "deadline" value
- * @method Task        setPunishment()         Sets the current record's "punishment" value
- * @method Task        setStatus()             Sets the current record's "status" value
- * @method Task        setComment()            Sets the current record's "comment" value
- * @method Task        setIsFailed()           Sets the current record's "is_failed" value
- * @method Task        setPunishmentComment()  Sets the current record's "punishment_comment" value
- * @method Task        setBoard()              Sets the current record's "Board" value
- * @method Task        setExecuter()           Sets the current record's "Executer" value
- * @method Task        setResponsible()        Sets the current record's "Responsible" value
+ * @method integer     getBoardId()             Returns the current record's "board_id" value
+ * @method integer     getExecuterId()          Returns the current record's "executer_id" value
+ * @method integer     getResponsibleId()       Returns the current record's "responsible_id" value
+ * @method string      getName()                Returns the current record's "name" value
+ * @method string      getDescription()         Returns the current record's "description" value
+ * @method date        getDeadline()            Returns the current record's "deadline" value
+ * @method string      getPunishment()          Returns the current record's "punishment" value
+ * @method enum        getStatus()              Returns the current record's "status" value
+ * @method string      getComment()             Returns the current record's "comment" value
+ * @method boolean     getIsFailed()            Returns the current record's "is_failed" value
+ * @method string      getPunishmentComment()   Returns the current record's "punishment_comment" value
+ * @method boolean     getIsDeadlineChanged()   Returns the current record's "is_deadline_changed" value
+ * @method Board       getBoard()               Returns the current record's "Board" value
+ * @method sfGuardUser getExecuter()            Returns the current record's "Executer" value
+ * @method sfGuardUser getResponsible()         Returns the current record's "Responsible" value
+ * @method Task        setBoardId()             Sets the current record's "board_id" value
+ * @method Task        setExecuterId()          Sets the current record's "executer_id" value
+ * @method Task        setResponsibleId()       Sets the current record's "responsible_id" value
+ * @method Task        setName()                Sets the current record's "name" value
+ * @method Task        setDescription()         Sets the current record's "description" value
+ * @method Task        setDeadline()            Sets the current record's "deadline" value
+ * @method Task        setPunishment()          Sets the current record's "punishment" value
+ * @method Task        setStatus()              Sets the current record's "status" value
+ * @method Task        setComment()             Sets the current record's "comment" value
+ * @method Task        setIsFailed()            Sets the current record's "is_failed" value
+ * @method Task        setPunishmentComment()   Sets the current record's "punishment_comment" value
+ * @method Task        setIsDeadlineChanged()   Sets the current record's "is_deadline_changed" value
+ * @method Task        setBoard()               Sets the current record's "Board" value
+ * @method Task        setExecuter()            Sets the current record's "Executer" value
+ * @method Task        setResponsible()         Sets the current record's "Responsible" value
  * 
  * @package    cms
  * @subpackage model
@@ -108,6 +111,9 @@ abstract class BaseTask extends sfDoctrineRecord
         $this->hasColumn('punishment_comment', 'string', null, array(
              'type' => 'string',
              'length' => '',
+             ));
+        $this->hasColumn('is_deadline_changed', 'boolean', null, array(
+             'type' => 'boolean',
              ));
     }
 
