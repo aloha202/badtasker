@@ -22,6 +22,9 @@
         <i class="fa fa-envelope bg-blue"></i>
         <div class="timeline-item <?php echo $Task->getDeadlineCssClass(); ?>">
             <span class="time">
+                <?php if($all): ?>
+                    <a href="<?php echo url_for('@board_show?id=' . $Task->getBoard()->getId()); ?>"><?php echo $Task->getBoard(); ?></a>
+                <?php endif; ?>
                                 <span class="responsible"  title="Ответственный">
                     <i class="fa fa-user" style=""></i>
                                     <?php echo $Task->getResponsible()->getUsername(); ?>

@@ -21,4 +21,8 @@ class defaultComponents extends sfComponents
 
     }
 
+    public function executeLeft(){
+        $this->Boards = $this->getUser()->getGuardUser()->getBoards();
+    }
+
 }

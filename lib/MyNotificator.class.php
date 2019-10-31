@@ -60,6 +60,19 @@ class MyNotificator
                 $message .=  "Коментарий: {$Task->getPunishmentComment()}";
                 P::XMail($Creator->getEmailAddress(), $subject, $message);
                 break;
+
+            case 'deadline_changed':
+                $subject = "Изменен дедлайн по задаче" . $Task->getName() . " ";
+                $message = $Task->getName() . '<br><i>' . $Task->getDescription() . '</i>';
+                $message .=  "Новый деделайн: {$Task->getDeadline()} <br>";
+                P::XMail($Creator->getEmailAddress(), $subject, $message);
+                if($Executer->getId() == $Responsible->getId()){
+                    P::XMail($Responsible->getEmailAddress(), $subject, $message);
+                }else{
+                    P::XMail($Responsible->getEmailAddress(), $subject, $message);
+                    P::XMail($Executer->getEmailAddress(), $subject, $message);
+                }
+                break;
         }
 
 

@@ -13,6 +13,7 @@
 class myContext extends sfContext {
 
     protected $cart = null;
+    protected $currentBoard = null;
 
     public function getCart() {
         if (!$this->cart) {
@@ -90,6 +91,14 @@ class myContext extends sfContext {
         }else{
             return $this->getModuleName() == $url;
         }
+    }
+
+    public function setCurrentBoard(Board $board){
+        $this->currentBoard = $board;
+    }
+
+    public function isCurrentBoard($board){
+        return $this->currentBoard && $this->currentBoard->id == $board->id;
     }
 
 

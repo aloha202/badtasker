@@ -9,6 +9,10 @@
           <?php include_component('default', 'header'); ?>
 
 
+          <div class="left-col hidden-xs">
+              <?php include_component('default', 'left'); ?>
+          </div>
+
           <!-- Full Width Column -->
           <div class="content-wrapper">
               <div class="container">

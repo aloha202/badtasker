@@ -16,7 +16,7 @@ board_show:
 
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: board, action: all }
 
 # generic rules
 # please, remove them by adding more specific rules
