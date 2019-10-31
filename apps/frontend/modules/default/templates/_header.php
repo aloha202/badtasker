@@ -10,7 +10,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#"><?php echo $sf_user->getGuardUser()->getUsername(); ?></a></li>
+                    <li class="active"><a href="<?php echo url_for('@homepage'); ?>">Overview</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Доски <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -25,7 +25,12 @@
 
                     </li>
                     <li><a href="<?php echo url_for('task/archive'); ?>"><i class="fa fa-book"></i> Архив</a></li>
-                    <li><a href="<?php echo url_for('auth/signout'); ?>">Log out</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $sf_user->getGuardUser()->getUsername(); ?> <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="<?php echo url_for('auth/signout'); ?>">Log out</a></li>
+                        </ul>
+                    </li>
                 </ul>
 
             </div><!-- /.navbar-collapse -->

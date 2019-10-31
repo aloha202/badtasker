@@ -18,7 +18,6 @@ class boardActions extends sfActions
   public function executeShow(sfWebRequest $request)
   {
 
-
         $this->Board = Q::c('Board', 'b')
             ->where('b.Users.id = ?', $this->getUser()->getGuardUser()->getId())
             ->andWhere('b.id = ?', $request->getParameter('id'))
@@ -34,5 +33,21 @@ class boardActions extends sfActions
             ->orderBy('t.deadline DESC')
             ->execute()
             ;
+        $this->all = false;
+
+        $this->getContext()->setCurrentBoard($this->Board);
+  }
+
+  public function executeAll(sfWebRequest $request)
+  {
+      $this->all = true;
+      $this->Tasks = Q::c('Task', 't')
+          ->andWhere('t.deadline >= ?', date('Y-m-d'))
+          ->andWhere('t.status = ?', 'in_progress ')
+          ->orderBy('t.deadline DESC')
+          ->execute()
+      ;
+
+      $this->setTemplate('show');
   }
 }

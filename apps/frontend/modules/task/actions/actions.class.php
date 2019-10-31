@@ -81,7 +81,21 @@ class taskActions extends sfActions
   }
 
   public function executeDeadline(sfWebRequest $request){
+      $this->Task = Q::c('Task', 't')
+          ->where('t.id = ?', $request->getParameter('id'))
+          ->fetchOne()
+      ;
 
+      $this->forward404Unless($this->Task &&
+          !$this->Task->is_deadline_changed &&
+          $this->Task->status == 'in_progress' &&
+          $this->Task->user_id == $this->getUser()->getGuardUser()->id
+      );
+
+      $this->form = new TaskFormDeadline($this->Task);
+
+
+      $this->processForm($this->form, $request);
   }
 
   protected function processForm($form, $request, $redirect = null)
