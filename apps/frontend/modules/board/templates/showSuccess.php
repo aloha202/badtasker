@@ -35,8 +35,7 @@
             <h3 class="timeline-header"><a href="#" class=""><?php echo $Task->name; ?></a></h3>
 
             <div class="timeline-body">
-                ...
-                <?php echo $Task->description; ?>
+                <?php echo $Task->getRaw('description'); ?>
             </div>
 
             <div class='timeline-footer'>
