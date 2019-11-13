@@ -22,6 +22,8 @@ class taskActions extends sfActions
 
       $this->processForm($this->form, $request);
 
+      $this->presets = Q::c('PunishmentPreset')->execute();
+
   }
 
 
@@ -96,6 +98,21 @@ class taskActions extends sfActions
 
 
       $this->processForm($this->form, $request);
+  }
+
+
+  public function executeReminder(sfWebRequest $request)
+  {
+      $Task = Q::c('Task', 't')
+          ->where('t.id = ?', $request->getParameter('id'))
+          ->fetchOne()
+      ;
+
+      MyNotificator::notify($Task, 'reminder');
+
+      $this->getUser()->setFlash('notice', 'Исполнитель задачи пнут успешно');
+
+      return $this->redirect($request->getReferer());
   }
 
   protected function processForm($form, $request, $redirect = null)

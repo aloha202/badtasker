@@ -49,6 +49,7 @@
                 <?php if($sf_user->isCreator($Task) && !$Task->is_deadline_changed): ?>
                     <a class="btn btn-success btn-xs" href="<?php echo url_for('task/deadline?id=' . $Task->id); ?>">Изменить дедлайн</a>
                 <?php endif; ?>
+                <a class="btn btn-xs btn-primary" href="<?php echo url_for('task/reminder?id=' . $Task->id); ?>">Пнуть</a>
             </div>
         </div>
     </li>

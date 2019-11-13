@@ -33,6 +33,8 @@
               </div><!-- /.container -->
           </footer>
 
+          <?php include_partial('global/flashes'); ?>
+
       </div><!-- ./wrapper -->
 
   <script type="text/javascript">
@@ -42,6 +44,12 @@
              dateFormat: 'dd.mm.yy',
            minDate: 0, maxDate: "+1M +10D"
          });
+
+
+         $('.my-fixed .alert').slideDown();
+         setTimeout(function () {
+             $('.my-fixed .alert').fadeOut();
+         }, 4000)
       });
   </script>
   </body>

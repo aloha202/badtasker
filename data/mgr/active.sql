@@ -1,1 +1,2 @@
-ALTER TABLE task ADD COLUMN is_deadline_changed TINYINT(1) AFTER punishment_comment;
+ALTER TABLE task ADD COLUMN is_deadline_notification_sent TINYINT(1) AFTER is_deadline_changed;
+CREATE TABLE punishment_preset (id BIGINT AUTO_INCREMENT, name VARCHAR(255) NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;

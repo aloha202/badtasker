@@ -73,3 +73,27 @@ footer{
 .left-col .active a{
     background: #ECF0F5;
 }
+
+
+.wrapper-relative{
+    position:relative;
+}
+input#task_punishment{
+    position: relative;
+    background: #fff;
+    z-index: 100;
+}
+select#task_punishment_preset{
+    position: absolute;
+    top: 2px;
+}
+
+.my-fixed{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    max-width: 400px;
+}
+.my-fixed .alert{
+    display: none;
+}
