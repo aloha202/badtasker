@@ -38,10 +38,15 @@ Task:
     is_failed: {type: boolean, default: false}
     punishment_comment: string()
     is_deadline_changed: boolean
+    is_deadline_notification_sent: boolean
   relations:
     Board: {foreignAlias: Tasks, onDelete: CASCADE}
     Executer: {class: sfGuardUser, local: executer_id, foreignAlias: ExecuterTasks, onDelete: CASCADE}
     Responsible: {class: sfGuardUser, local: responsible_id, foreignAlias: ResponsibleTasks, onDelete: CASCADE}
+
+PunishmentPreset:
+  columns:
+    name: {type: string(255), notnull: true}
 
 
 Config:

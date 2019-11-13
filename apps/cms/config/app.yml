@@ -24,6 +24,9 @@ all:
       Task:
         url: 'task/index'
         icon: gear
+      Punishments:
+        url: 'punishment_preset/index'
+        icon: bars
 
 
     menu2:

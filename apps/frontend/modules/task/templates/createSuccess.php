@@ -17,3 +17,30 @@
 </div>
     </div>
 </div>
+
+
+<script type="text/javascript">
+
+    $(function () {
+
+        $('#task_punishment').wrap("<div class='wrapper-relative'></div>");
+
+        var options = "<option value=''>-- выбрать заготовку --</option>";
+        <?php foreach($presets as $preset): ?>
+            options += "<option value='<?php echo $preset->name; ?>'><?php echo $preset->name; ?>   </option>";
+        <?php endforeach; ?>
+
+        $('#task_punishment').parent().append(
+            ("<select id='task_punishment_preset'>%options%</select>").replace('%options%', options)
+        );
+
+        $('#task_punishment_preset').change(function () {
+            $('#task_punishment').val($(this).val());
+        });
+
+        $('#task_punishment_preset').css('left', ($('#task_punishment').width() - $('#task_punishment_preset').width() + 18));
+    })
+
+
+
+</script>

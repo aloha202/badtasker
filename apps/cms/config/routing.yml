@@ -1,3 +1,12 @@
+punishment_preset:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PunishmentPreset
+    module:               punishment_preset
+    prefix_path:          /punishment_preset
+    column:               id
+    with_wildcard_routes: true
+
 task:
   class: sfDoctrineRouteCollection
   options:

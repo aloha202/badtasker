@@ -73,6 +73,22 @@ class MyNotificator
                     P::XMail($Executer->getEmailAddress(), $subject, $message);
                 }
                 break;
+
+            case 'deadline_today':
+                $subject = "Сегодня дедлайн по задаче " . $Task->getName() . " ";
+                $message = $Task->getName() . '<br><i>' . $Task->getDescription() . '</i><br><br>';
+                $message .  "В случае провала Вас ожидает наказание: " . $Task->getPunishment();
+                P::XMail($Responsible->getEmailAddress(), $subject, $message);
+
+                break;
+
+            case 'reminder':
+                $subject = "Напоминание по задаче " . $Task->getName() . " ";
+                $message = $Task->getName() . '<br><i>' . $Task->getDescription() . '</i><br><br>';
+                $message .=  "Как продвигается выполнение задачи?";
+                P::XMail($Executer->getEmailAddress(), $subject, $message);
+
+                break;
         }
 
 
