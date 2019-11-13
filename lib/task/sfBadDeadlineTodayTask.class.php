@@ -22,16 +22,21 @@ class sfBadDeadlineTodayTask extends sfBaseTask
 
         $q = Q::c('Task', 't')
             ->where('t.deadline = ?', date('Y-m-d'))
-            ->andWhere('t.is_deadline_notification_sent <> ?', true)
+            ->andWhere('t.is_deadline_notification_sent IS NULL')
             ;
 
         $Tasks = $q->execute();
+
         foreach($Tasks as $Task){
 
             MyNotificator::notify($Task, 'deadline_today');
 
-            $Task->is_deadline_notification_sent = true;
-            $Task->save();
+            $query = Q::c('Task', 't')
+                ->update()
+                ->set(['is_deadline_notification_sent' => true])
+                ->where('id = ?', $Task->getId())
+            ;
+            $query->execute();
 
         }
 
