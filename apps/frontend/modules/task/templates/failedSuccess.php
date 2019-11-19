@@ -1,5 +1,6 @@
 <div class="row">
 
+    <h2>Провалены <?php echo $User; ?></h2>
     <?php foreach($Tasks as $Task): ?>
     <div class="col-md-6">
         <div class="box box-default">
@@ -20,7 +21,9 @@
                     <dt>Наказание</dt>
                     <dd><?php echo $Task->getPunishment(); ?></dd>
                 </dl>
-                <a class="btn btn-danger btn-xs" href="<?php echo url_for('@task_punishment?id=' . $Task->id); ?>"><i class="fa fa-thumbs-up"></i> Наказание получено</a>
+                <?php if($User->id == $sf_user->getGuardUser()->id): ?>
+                    <a class="btn btn-danger btn-xs" href="<?php echo url_for('@task_punishment?id=' . $Task->id); ?>"><i class="fa fa-thumbs-up"></i> Наказание получено</a>
+                <?php endif; ?>
             </div>
         </div>
     </div>

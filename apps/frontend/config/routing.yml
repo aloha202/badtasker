@@ -2,6 +2,11 @@
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
 # default rules
+
+task_failed:
+  url: /task/failed/:id.html
+  param: {module: task, action: failed}
+
 task_punishment:
   url: /task/punishment/:id.html
   param: {module: task, action: punishment}
