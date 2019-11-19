@@ -27,11 +27,12 @@ class taskActions extends sfActions
   }
 
 
-  public function executeFailed($request)
+  public function executeFailed(sfWebRequest $request)
   {
 
+        $this->User = Q::f('sfGuardUser', $request->getParameter('id'));
         $this->Tasks = Q::c('Task', 't')
-            ->where('t.responsible_id = ?', $this->getUser()->getGuardUser()->getId())
+            ->where('t.responsible_id = ?', $this->User->getId())
             ->andWhere('t.status = ?', 'failed')
             ->orderBy('t.deadline DESC')
             ->execute();
@@ -39,7 +40,7 @@ class taskActions extends sfActions
 
   }
 
-  public function executeArchive($request)
+  public function executeArchive(sfWebRequest $request)
   {
       $this->Tasks = Q::c('Task', 't')
           ->where('t.responsible_id = ?', $this->getUser()->getGuardUser()->getId())

@@ -20,9 +20,17 @@
                         </ul>
                     </li>
                     <li><a href="<?php echo url_for('task/create'); ?>"><span>+</span> Добавить задачу</a></li>
-                    <li>
-                        <a href="<?php echo url_for('task/failed'); ?>" class="red"><span></span> Провалены<?php if($failed_count): echo "({$failed_count})"; endif; ?></a>
-
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle red" data-toggle="dropdown">Провалены <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <?php foreach($Users as $User): ?>
+                            <li><a href="<?php echo url_for('@task_failed?id=' . $User->id); ?>"><?php echo $User; ?>
+                                <?php if(!empty($failed_count[$User->id])): ?>
+                                    (<?php echo $failed_count[$User->id]; ?>)
+                                    <?php endif; ?>
+                                </a></li>
+                            <?php endforeach; ?>
+                        </ul>
                     </li>
                     <li><a href="<?php echo url_for('task/archive'); ?>"><i class="fa fa-book"></i> Архив</a></li>
                     <li class="dropdown">
