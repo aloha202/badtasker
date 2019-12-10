@@ -97,3 +97,8 @@ select#task_punishment_preset{
 .my-fixed .alert{
     display: none;
 }
+
+input#task_deadline{
+    position: relative;
+    z-index: 1000;
+}
