@@ -42,7 +42,7 @@
       $(function () {
          $('.datepicker').datepicker({
              dateFormat: 'dd.mm.yy',
-           minDate: 0, maxDate: "+1M +10D"
+           minDate: 0, maxDate: "+6M"
          });
 
 
