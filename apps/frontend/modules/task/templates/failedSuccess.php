@@ -21,7 +21,7 @@
                     <dt>Наказание</dt>
                     <dd><?php echo $Task->getPunishment(); ?></dd>
                 </dl>
-                <?php if($User->id == $sf_user->getGuardUser()->id): ?>
+                <?php if($User->id == $sf_user->getGuardUser()->id || $Task->user_id == $sf_user->getGuardUser()->id): ?>
                     <a class="btn btn-danger btn-xs" href="<?php echo url_for('@task_punishment?id=' . $Task->id); ?>"><i class="fa fa-thumbs-up"></i> Наказание получено</a>
                 <?php endif; ?>
             </div>

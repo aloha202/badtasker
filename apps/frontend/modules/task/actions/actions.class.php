@@ -30,7 +30,11 @@ class taskActions extends sfActions
   public function executeFailed(sfWebRequest $request)
   {
 
-        $this->User = Q::f('sfGuardUser', $request->getParameter('id'));
+      if($request->getParameter('id')) {
+          $this->User = Q::f('sfGuardUser', $request->getParameter('id'));
+      }else{
+          $this->User = $this->getUser()->getGuardUser();
+      }
         $this->Tasks = Q::c('Task', 't')
             ->where('t.responsible_id = ?', $this->User->getId())
             ->andWhere('t.status = ?', 'failed')
@@ -75,12 +79,14 @@ class taskActions extends sfActions
 
       $this->forward404Unless($this->Task &&
           $this->Task->status == 'failed' &&
-          $this->Task->responsible_id == $this->getUser()->getGuardUser()->id);
+          ($this->Task->responsible_id == $this->getUser()->getGuardUser()->id ||
+              $this->Task->user_id == $this->getUser()->getGuardUser()->id)
+          );
 
       $this->form = new TaskFormPunishment($this->Task);
 
 
-      $this->processForm($this->form, $request, 'task/failed');
+      $this->processForm($this->form, $request, 'task/failed?id=' . $this->Task->responsible_id);
   }
 
   public function executeDeadline(sfWebRequest $request){
