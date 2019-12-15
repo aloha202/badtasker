@@ -71,6 +71,13 @@ abstract class BaseTaskForm extends BaseFormDoctrine
        
             
             
+              'priority'                      => new sfWidgetFormChoice(array('choices' => array('low' => 'low', 'medium' => 'medium', 'high' => 'high'))),
+      
+        
+        
+       
+            
+            
               'punishment'                    => new sfWidgetFormTextarea(),
       
         
@@ -155,6 +162,8 @@ abstract class BaseTaskForm extends BaseFormDoctrine
               'description'                   => new sfValidatorString(array('required' => false)),
                   
               'deadline'                      => new sfValidatorDate(array('required' => false)),
+                  
+              'priority'                      => new sfValidatorChoice(array('choices' => array(0 => 'low', 1 => 'medium', 2 => 'high'), 'required' => false)),
                   
               'punishment'                    => new sfValidatorString(array('required' => false)),
                   

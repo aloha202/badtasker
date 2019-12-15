@@ -20,7 +20,7 @@
     <li>
         <!-- timeline icon -->
         <i class="fa fa-envelope bg-blue"></i>
-        <div class="timeline-item <?php echo $Task->getDeadlineCssClass(); ?>">
+        <div class="timeline-item <?php echo $Task->getDeadlineCssClass(); ?> prio-<?php echo $Task->priority; ?>">
             <span class="time">
                 <?php if($all): ?>
                     <a href="<?php echo url_for('@board_show?id=' . $Task->getBoard()->getId()); ?>"><?php echo $Task->getBoard(); ?></a>

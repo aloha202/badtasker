@@ -11,6 +11,7 @@
  * @property string $name
  * @property string $description
  * @property date $deadline
+ * @property enum $priority
  * @property string $punishment
  * @property enum $status
  * @property string $comment
@@ -28,6 +29,7 @@
  * @method string      getName()                          Returns the current record's "name" value
  * @method string      getDescription()                   Returns the current record's "description" value
  * @method date        getDeadline()                      Returns the current record's "deadline" value
+ * @method enum        getPriority()                      Returns the current record's "priority" value
  * @method string      getPunishment()                    Returns the current record's "punishment" value
  * @method enum        getStatus()                        Returns the current record's "status" value
  * @method string      getComment()                       Returns the current record's "comment" value
@@ -44,6 +46,7 @@
  * @method Task        setName()                          Sets the current record's "name" value
  * @method Task        setDescription()                   Sets the current record's "description" value
  * @method Task        setDeadline()                      Sets the current record's "deadline" value
+ * @method Task        setPriority()                      Sets the current record's "priority" value
  * @method Task        setPunishment()                    Sets the current record's "punishment" value
  * @method Task        setStatus()                        Sets the current record's "status" value
  * @method Task        setComment()                       Sets the current record's "comment" value
@@ -87,6 +90,16 @@ abstract class BaseTask extends sfDoctrineRecord
              ));
         $this->hasColumn('deadline', 'date', null, array(
              'type' => 'date',
+             ));
+        $this->hasColumn('priority', 'enum', null, array(
+             'type' => 'enum',
+             'values' => 
+             array(
+              0 => 'low',
+              1 => 'medium',
+              2 => 'high',
+             ),
+             'default' => 'medium',
              ));
         $this->hasColumn('punishment', 'string', null, array(
              'type' => 'string',
