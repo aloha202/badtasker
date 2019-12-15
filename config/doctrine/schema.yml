@@ -32,6 +32,7 @@ Task:
     name: string(255)
     description: string()
     deadline: date
+    priority: {type: enum, values: [low, medium, high], default: medium}
     punishment: string()
     status: {type: enum, values: [in_progress, done, failed, archived], default: in_progress}
     comment: string()

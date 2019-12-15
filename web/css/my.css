@@ -102,3 +102,18 @@ input#task_deadline{
     position: relative;
     z-index: 1000;
 }
+
+.prio-high{
+    border: solid 3px #DE4F3D;git
+}
+/*
+.prio-high h3.timeline-header{
+ font-size: 20px !important;
+}
+*/
+.prio-medium{
+    border: solid 2px #fff;
+}
+.prio-low{
+    border: solid 2px #DDDDDD;
+}
